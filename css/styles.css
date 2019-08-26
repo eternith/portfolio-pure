@@ -1,0 +1,180 @@
+/* 
+  Portfolio CSS 
+  author: Peter Buk
+*/
+
+@charset "utf-8";
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 400;
+  src: url("../font/Gotham-Book.otf");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../font/Gotham-BookIta.otf");
+}
+@font-face {
+  font-family: "Gotham";
+  font-weight: 700;
+  src: url("../font/Gotham-Bold.otf");
+}
+@font-face {
+  font-family: "Effra";
+  font-weight: 300;
+  src: url("../font/Effra-Light.otf");
+}
+@font-face {
+  font-family: "Effra";
+  font-weight: 700;
+  src: url("../font/Effra-Medium.otf");
+}
+
+/************************ 
+HTML and main Body Styles 
+************************/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1, h2, p, ul, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: auto;
+  color: #595959;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+
+  min-width: 960px;
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/**************
+	Grid Layout
+**************/
+
+.left {
+  grid-column: 1 / 6;
+  background-color: yellow;
+}
+
+.right {
+  grid-column: 6 / 13;
+  background-color: blue;
+}
+
+#logoContainer {
+  grid-row: 1 / 2;
+  grid-column: 1 / 6;
+  margin-top: 5em;
+}
+
+#navbar {
+  grid-row: 1 / 2;
+  grid-column: 11 / 13;
+  margin-top: 5em;
+}
+
+
+/**************
+	Typography
+**************/
+
+h1, h2 {
+  font-family: "Effra", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.375em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+p {
+  font-family: "Gotham", sans-serif;
+  line-height: 1.5em;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.outline {
+  font-family: "Effra", sans-serif;
+  font-size: 1.875em;
+  font-weight: 300;
+}
+
+.subtext {
+  font-style: italic;
+}
+
+
+.cta {
+  font-family: "Effra", sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+
+  display: inline-block;
+  border: 1px solid #595959;
+  padding: 1em 2em;
+  margin: 0;
+  text-decoration: none;
+  background-color: transparent;
+  color: #595959;
+  cursor: pointer;
+  text-align: center;
+}
+
+/**************
+	Header
+**************/
+
+#logo {
+  width: 20em;
+}
+
+nav ul {   
+  display: flex;
+  justify-content: space-between;
+	list-style: none;
+}
+nav li {
+  display: inline-block;
+  padding: 1em 0;
+  font-family: GothamBook, sans-serif;
+  text-align: right;
+  font-size: 1.2em;
+	color: #fff;
+  cursor: pointer;
+}
+nav ul li a:hover {
+  font-family: GothamBold, sans-serif;
+  color: #000;
+  transition: all 200ms ease;
+} 
+a {
+  
+  text-decoration: none;
+  color: #595959;
+}
+
+
