@@ -237,7 +237,7 @@ figcaption {
   font-size: 1.125rem;
   font-weight: 500;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   border: 1px solid #595959;
   padding: 1rem 2rem;
