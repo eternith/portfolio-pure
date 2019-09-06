@@ -11,20 +11,20 @@
 
   <title>Pipeline Incidents - peter buk</title>
 
+  <script src="js/gumshoe.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div id="outlineBlock">
-    <ul>
-      <li id="currentItem">user research</li>
-      <li>ideation</li>
-      <li>prototype</li>
-      <li>final design</li>
-      <li>outcomes</li>
+    <ul id="outlineBlock">
+      <li><a href="#overview">overview</a></li>
+      <li><a href="#user-research">user research</a></li>
+      <li><a href="#ideation">ideation</a></li>
+      <li><a href="#outcomes">outcomes</a></li>
     </ul>
-  </div>
 
   <!-- header -->
   <header>
@@ -45,7 +45,7 @@
   <!-- main content -->
   <main>
     <!-- overview section -->
-    <section>
+    <section id="overview">
       <div class="block60">
         <!-- case study title -->
         <h1 class="textCenter">Pipeline Incidents</h1>
@@ -88,7 +88,7 @@
 
 
     <!-- user research section -->
-    <section>
+    <section id="user-research">
       <div class="sectionBlock">
         <h3>USER RESEARCH</h3>
         <h1>Exploring the Data</h1>
@@ -120,7 +120,7 @@
     
 
     <!-- ideation section -->
-    <section>
+    <section id="ideation">
       <div class="sectionBlock">
         <h3>IDEATION</h3>
         <h1>Visualizing Location Data</h1>
@@ -166,7 +166,7 @@
     <!-- more sections here -->
 
     <!-- Outcomes section -->
-    <section>
+    <section id="outcomes">
       <div class="sectionBlock">
         <h3>OUTCOMES</h3>
         <h1>Launching and Demos</h1>
@@ -206,7 +206,10 @@
   </footer>
 
 
-
+  <script>
+    var spy = new Gumshoe('#outlineBlock a');
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 </body>
 
 </html>

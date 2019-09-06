@@ -252,14 +252,14 @@ figcaption {
 
 /* floating ToC */
 #outlineBlock {
-  top: 50%;
-  left: 5%;
+  top: 20%;
+  left: 0%;
   position: fixed;
   background-color: #FFE4C7;
   padding: 1rem 1rem 1rem 3rem;
-  z-index: -10;
+  z-index: 1;
 }
-#outlineBlock ul {
+#outlineBlock {
   list-style: none;
   font-family: "Gotham", sans-serif;
   font-weight: 400;
@@ -267,16 +267,14 @@ figcaption {
   line-height: 1.5rem;
 }
 
-#currentItem:before {
-  display: inline-block;
-  position: absolute;
-  left: 35px;
-  top: 23px;
-  content: ' ';
-  background-image: url("../img/icons/tri-selector.svg");
-  height: 10px;
-  width: 10px;
+#outlineBlock li.active {
+  list-style-image: url("../img/icons/tri-selector.svg");
+  font-weight: 700;
 }
+#outlineBlock li.hover {
+  font-weight: 700;
+}
+
 
 
 .nextProject {

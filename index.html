@@ -9,6 +9,7 @@
   
   <title>peter buk</title>
 
+  <script src="js/smooth-scroll.min.js"></script>
 
   <link href="css/styles.css" rel="stylesheet" >
 </head>
@@ -43,12 +44,12 @@
     </section>
 
     <!-- work/case study sections -->
-    <section class="mainPageDivider">
+    <section class="mainPageDivider" id="work">
       <hr class="block60">
     </section>
 
 
-    <section class="block60 blockFlex flexCenter" id="work">
+    <section class="block60 blockFlex flexCenter">
       <div class="left40">
         <p class="overviewText">project 1:</p>
         <h1>Pipeline Incidents</h1>
@@ -93,7 +94,8 @@
     <p class="rightText">&copy;2019 designed and coded by peter buk</p>
   </footer>
       
-
-  
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 </body>
 </html>
