@@ -52,6 +52,9 @@ footer {
   justify-content: flex-end;
 }
 
+hr {
+  opacity: 0.5;
+}
 
 /**************
 	Layout
@@ -203,6 +206,10 @@ figcaption {
 	Custom Blocks
 **************/
 
+.mainPageDivider {
+  margin-bottom: 8rem;
+}
+
 .cta {
   font-family: "Effra", sans-serif;
   font-size: 1.125rem;
@@ -269,6 +276,30 @@ figcaption {
   background-image: url("../img/icons/tri-selector.svg");
   height: 10px;
   width: 10px;
+}
+
+
+.nextProject {
+  display: flex;
+  justify-content: flex-end;
+}
+.nextProjectLabel {
+  display: block;
+  font-family: "Effra", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+.nextProjectLink {
+  display: flex;
+  align-items: center;
+}
+.nextProjectLink h2 {
+  margin-bottom: 0;
+}
+.arrowNextProject {
+  width: 2rem;
+  margin-left: 0.4rem;
 }
 
 
