@@ -511,11 +511,11 @@ figure {
 
   .blockFlex {
     flex-direction: column;
-    margin-bottom: 6rem;
   }
   
   header {
     flex-direction: column;
+    margin: 2rem auto;
   }
   #logoContainer {
     display: flex;
@@ -524,21 +524,24 @@ figure {
   #navbar ul {
     justify-content: center;
   }
+  nav li:last-child {
+    padding-right: 2rem;
+  }
 
   .left40, .right60 {
     width: 80vw;
     margin-bottom: 2rem;
   }
 
-  .mainPageDivider {
-    margin-bottom: 6rem;
-  }
 
   #tldrBlock {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .icon {
+    margin: 0.625rem 1rem;
   }
 
   .overviewBlock {
@@ -559,6 +562,9 @@ figure {
   .imageDuo, .imageTrio {
     display: flex;
     flex-direction: column;
+  }
+  figure {
+    margin-bottom: 1rem;
   }
 
   .leftText {
