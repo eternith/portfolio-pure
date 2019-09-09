@@ -39,11 +39,13 @@ h1, h2, h3, p, ul, body {
 
 body {
   color: #595959;
+  width: 100%;
 }
 
 main {
   position: relative;
   margin: 0 auto;
+  width: 100%;
 }
 
 footer {
@@ -133,7 +135,8 @@ section *:last-child {
   width: 33.3%;
 }
 .twoThirdBlock {
-  width: 66.6%;
+  width: 64%;
+  padding-right: 2.66%;
 }
 
 
@@ -259,6 +262,7 @@ figcaption {
   font-weight: 400;
   font-size: 0.8rem;
   color: #aaa;
+  line-height: 1.2rem;
 
   position: relative;
   display: inline-block;
@@ -482,3 +486,90 @@ figure {
   margin-bottom: 2rem;
 }
 
+
+
+
+/**************
+	RESPONSIVE
+**************/
+
+@media (max-width: 1200px) {
+  header, footer, .block60 {
+    width: 80vw;
+  }
+
+  .block40 {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .block40 {
+    width: 80vw;
+  }
+
+  .blockFlex {
+    flex-direction: column;
+    margin-bottom: 6rem;
+  }
+  
+  header {
+    flex-direction: column;
+  }
+  #logoContainer {
+    display: flex;
+    justify-content: center;
+  }
+  #navbar ul {
+    justify-content: center;
+  }
+
+  .left40, .right60 {
+    width: 80vw;
+    margin-bottom: 2rem;
+  }
+
+  .mainPageDivider {
+    margin-bottom: 6rem;
+  }
+
+  #tldrBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overviewBlock {
+    flex-direction: column;
+  }
+  .twoThirdBlock, .thirdBlock {
+    width: 80vw;
+  }
+
+  #outlineBlock {
+    display: none;
+  }
+
+  .sectionBlock {
+    padding: 3rem 20vw;
+  }
+
+  .imageDuo, .imageTrio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftText {
+    padding-right: 0;
+  }
+
+  .subtext, .overviewText, .leftText {
+    margin-bottom: 1rem;
+    line-height: 1.6rem;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
