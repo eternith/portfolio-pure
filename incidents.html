@@ -11,6 +11,7 @@
 
   <title>Pipeline Incidents - peter buk</title>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/gumshoe.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
 
@@ -19,12 +20,17 @@
 
 <body>
 
-    <ul id="outlineBlock">
+  <progress id="progressBarOrange" value="0"></progress>
+
+  <div id="outlineBlock" class="orange-lite">
+    <p class="outlineLabel">JUMP TO</p>
+    <ul>
       <li><a href="#overview">overview</a></li>
       <li><a href="#user-research">user research</a></li>
       <li><a href="#ideation">ideation</a></li>
       <li><a href="#outcomes">outcomes</a></li>
     </ul>
+  </div>
 
   <!-- header -->
   <header>
@@ -89,7 +95,7 @@
 
     <!-- user research section -->
     <section id="user-research">
-      <div class="sectionBlock">
+      <div class="sectionBlock orange">
         <h3>USER RESEARCH</h3>
         <h1>Exploring the Data</h1>
       </div>
@@ -101,7 +107,7 @@
         </p>
       </div>
 
-      <div class="block80 imageDuo">
+      <div class="block60 imageDuo">
         <figure>
           <img src="img/incidents/data-workshop.png" alt="data workshop">
           <figcaption>Data collaboration workshop at the NEB headquarters with data experts, analysts and designers</figcaption>
@@ -121,7 +127,7 @@
 
     <!-- ideation section -->
     <section id="ideation">
-      <div class="sectionBlock">
+      <div class="sectionBlock orange">
         <h3>IDEATION</h3>
         <h1>Visualizing Location Data</h1>
       </div>
@@ -146,7 +152,7 @@
         </p>
       </div>
 
-      <div class="block80 imageTrio">
+      <div class="block60 imageTrio">
         <figure>
           <img src="img/incidents/data-workshop.png" alt="data workshop">
           <figcaption>Iteration 1
@@ -167,7 +173,7 @@
 
     <!-- Outcomes section -->
     <section id="outcomes">
-      <div class="sectionBlock">
+      <div class="sectionBlock orange">
         <h3>OUTCOMES</h3>
         <h1>Launching and Demos</h1>
       </div>
@@ -210,6 +216,7 @@
     var spy = new Gumshoe('#outlineBlock a');
     var scroll = new SmoothScroll('a[href*="#"]');
   </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

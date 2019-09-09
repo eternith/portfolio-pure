@@ -31,6 +31,7 @@ HTML and main Body Styles
 	box-sizing: border-box;
 }
 
+
 h1, h2, h3, p, ul, body {
 	margin: 0;
 	padding: 0;
@@ -55,6 +56,26 @@ footer {
 hr {
   opacity: 0.5;
 }
+
+
+/**************
+	Colors
+**************/
+
+.orange {
+  background-color: rgb(255, 228, 199);
+}
+.orange-lite {
+  background-color: rgba(255, 228, 199, 0.6);
+}
+.blue {
+  background-color: #87CDFF;
+}
+.blue-lite {
+  background-color: rgba(135, 205, 255, 0.6);
+}
+
+
 
 /**************
 	Layout
@@ -227,7 +248,7 @@ figcaption {
   text-align: center;
 }
 
-/* about page list of roles */
+/* about page: list of roles */
 .roleBlock {
   font-family: "Gotham", sans-serif;
   font-weight: 400;
@@ -245,36 +266,49 @@ figcaption {
 
 /* large separated full-width header block */
 .sectionBlock {
-  background-color: #FFE4C7;
   padding: 6rem 30vw;
   margin-bottom: 4rem;
+  z-index: 5;
 }
 
 /* floating ToC */
 #outlineBlock {
-  top: 20%;
+  top: 10%;
   left: 0%;
   position: fixed;
-  background-color: #FFE4C7;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 1rem 1rem 1rem 2rem;
   z-index: 1;
+
+  display: none;
 }
-#outlineBlock {
+
+#outlineBlock li {
   list-style: none;
   font-family: "Gotham", sans-serif;
-  font-weight: 400;
-  font-size: 0.8rem;
   line-height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding-left: 16px;
 }
 
 #outlineBlock li.active {
-  list-style-image: url("../img/icons/tri-selector.svg");
+  /* list-style-image: url("../img/icons/tri-selector.svg"); */
+  background-image: url("../img/icons/tri-selector.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 10px;
+  padding-left: 16px;
+
   font-weight: 700;
 }
 #outlineBlock li.hover {
   font-weight: 700;
 }
 
+.outlineLabel {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
 
 
 .nextProject {
@@ -298,6 +332,48 @@ figcaption {
 .arrowNextProject {
   width: 2rem;
   margin-left: 0.4rem;
+}
+
+
+/* Progress Bar */
+progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  
+	z-index: 10;
+}
+progress::-webkit-progress-bar {
+	background-color: transparent;
+}
+
+#progressBarOrange {
+  color: #FFCE8F;
+}
+#progressBarOrange::-webkit-progress-value {
+	background-color: #FFCE8F;
+}
+#progressBarOrange::-moz-progress-bar {
+	background-color: #FFCE8F;
+}
+
+#progressBarBlue {
+  color: #87CDFF;
+}
+#progressBarBlue::-webkit-progress-value {
+	background-color: #87CDFF;
+}
+#progressBarBlue::-moz-progress-bar {
+	background-color: #87CDFF;
 }
 
 
