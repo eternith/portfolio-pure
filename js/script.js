@@ -4,8 +4,6 @@
 */
 
 var progressBar = $("progress");
-// var winHeight = $(window).height();
-// var docHeight = $(document).height();
 var max, value;
 
 // set initial max value on document ready, but may not be correct due to images loading
@@ -34,7 +32,7 @@ var updateProgressBar = function() {
   progressBar.attr("value", value);
 
   // show/hide outlineBlock after below certain pixels
-  if ($(window).width > 768) {
+  if ($(window).width() > 768) {
     if (!outlineBlockVisible && value > 200 ) {
       $("#outlineBlock").fadeIn();
       outlineBlockVisible = true;
