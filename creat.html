@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Peter Buk Portfolio">
+  <meta name="keywords"
+    content="peter buk, portfolio, UX, UI, design, UX/UI, service, product, development, programming, webdev, user experience, user interface, visual design, ux research, ">
+
+  <title>CREAT - peter buk</title>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/gumshoe.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <progress id="progressBarBlue" value="0"></progress>
+
+  <div id="outlineBlock" class="blue-lite">
+    <p class="outlineLabel">JUMP TO</p>
+    <ul>
+      <li><a href="#problem">problem</a></li>
+      <li><a href="#solution">solution</a></li>
+      <li>
+        <a href="#process">process</a>
+        <ul>
+          <li><a href="#exploration">Exploration</a></li>
+          <li><a href="#research">Research Insights</a></li>
+          <li><a href="#ideation">Ideation</a></li>
+          <li><a href="#paper">Paper Prototyping</a></li>
+          <li><a href="#wireframing">Wireframing</a></li>
+          <li><a href="#testing">Testing</a></li>
+          <li><a href="#final">Final Design</a></li>
+        </ul>
+      </li>
+      <li><a href="#outcomes">outcomes</a></li>
+    </ul>
+  </div>
+
+  <!-- header -->
+  <header>
+    <div id="logoContainer">
+      <a href="./index.html"><img id="logo" src="img/logo.svg" alt="logo" /></a>
+    </div>
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="./index.html#work">work</a></li>
+        <li><a href="./about.html">about</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <!-- main content -->
+  <main>
+    <!-- overview section -->
+    <section id="overview">
+      <div class="block60">
+        <!-- case study title -->
+        <h1 class="textCenter">CREAT - an ideation management tool</h1>
+
+        <!-- hero image -->
+        <img src="img/creat/creat.svg" alt="hero image todo">
+      </div>
+
+      <div class="block40">
+        <div class="overviewBlock">
+          <div class="thirdBlock">
+            <div>
+              <h4>role</h4>
+              <p>
+                UX Designer<br>
+                Interaction Designer
+              </p>
+            </div>
+            <div>
+              <h4>timeline</h4>
+              <p>
+                4 Week Design Spring (August 2019)
+              </p>
+            </div>
+          </div>
+
+          <div class="thirdBlock">
+            <h4>tools</h4>
+            <p>
+              Sketch<br>
+              Invision
+            </p>
+          </div>
+
+          <div class="thirdBlock">
+            <h4>methods</h4>
+            <p>
+              Affinity Diagrams<br>
+              Mind Mapping<br>
+              Paper Prototypes<br>
+              Wireframes<br>
+              User Testing<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="block40">
+        <h4>about</h4>
+        <p>CREAT is an ideation management tool to help designers turn ideas into concepts. Its main purpose is to help organize physical artifacts created during the ideation phase of the design process by digitization.</p>
+      </div>
+    </section>
+
+
+    <!-- problem section -->
+    <section id="problem">
+      <div class="sectionBlock blue">
+        <h3>PROBLEM</h3>
+        <h1>How can we organize the physical ideation process?</h1>
+      </div>
+
+      <div class="block40">
+        <p>
+          Design processes usually involve an ideation phase where designers explore a diverse range of ideas before converging into a single concept to further develop. Physical ideation activities such as sketching and sticky notes are great for rapidly exploring ideas during this time. However, the design artifacts generated from these activities are difficult to document and organize, especially when teams are remotely separated.
+        </p>
+        <figure>
+          <img src="img/creat/problem-messy.png" alt="messy whiteboard and unreadable sticky notes">
+          <figcaption>Can you read or understand these artifacts without an explanation?</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- solution section -->
+    <section id="solution">
+      <div class="sectionBlock blue">
+        <h3>SOLUTION</h3>
+        <h1>CREAT – an ideation management tool</h1>
+      </div>
+
+      <div class="block40 flexWrapper flexCenter">
+        <div class="halfBlock">
+          <p>
+            CREAT is a tool to help digitize the various ideation artifacts generated across activity sessions and team members. By digitizing ideas, they can be shared across the team to cultivate new ideas instead of staying hidden in one person’s notebook.
+            <br><br>
+            Artifacts can be grouped and displayed in different views to suit different working styles.
+          </p>
+        </div>
+        <div class="halfBlock">
+          <img src="img/creat/solution-view.gif" alt="CREAT switching views">
+        </div>
+      </div>
+
+      <div class="block40">
+        <p>
+          Digitizing physical artifacts is as easy as taking a photo. The image is then converted with OCR to a digital format
+          that can be manipulated. The original analog version can also be toggled back in case any details go missing.
+        </p>
+        <div class="flexWrapper">
+          <div class="halfBlock">
+            <img src="img/creat/solution-scan.gif" alt="CREAT scanning">
+          </div>
+          <div class="halfBlock">
+            <img src="img/creat/solution-mode.gif" alt="CREAT switching modes">
+          </div>
+        </div>
+      </div>
+
+      <div class="block40 flexWrapper flexCenter">
+        <div class="halfBlock">
+          <img src="img/creat/solution-cards.gif" alt="CREAT card annotations">
+        </div>
+        <div class="halfBlock">
+          <p>
+            Annotations and comments can also be added to help capture the thinking process. This documentation helps ideas and artifacts live on their own without requiring a designer to walk through their thinking process.
+          </p>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <!-- process section -->
+    <section id="process">
+      <div class="sectionBlock blue">
+        <h3>PROCESS</h3>
+        <h1>Concept around concepts</h1>
+      </div>
+
+      <div class="block40">
+        <h2 id="exploration">Exploring the problem space</h2>
+        <p>
+          This project started as a class project where I was given the prompt “Concepts” as a starting point to work from. This led to an incredibly meta exploration of generating ideas and concepts around concepts. 
+          <br><br>
+          Through mind mapping and affinity diagram exercises, I explored various directions I could take the project in such as <i>teaching concepts, concept generation, and challenging concepts</i>.
+          <br><br>
+          After some discussions with classmates, I decided to explore the branch of Idea vs Concept and what that means. Depending on who you ask, you’ll get different answers with varying semantics, but the definition I settled on was an Idea being loose and vague whereas a Concept is defined with set constraints and structures.
+        </p>
+        <img class="inlineImage" src="img/creat/process-exploring-affinityDiagram.jpg" alt="affinity diagram for idea vs concept">
+        <p>
+          In fact, the activity of going from an Idea to a Concept is the design process we are very familiar with! Seeing how my classmates work through this very process inspired me to explore how a tool can help designers in this phase.
+        </p>
+        <img class="inlineImage" src="img/creat/process-exploring-classmates.jpg"
+          alt="classmates ideating">
+        <p>
+          In order to keep the project scope contained for our short timeline, I decided to concentrate on the areas of Remote Collaboration and Digitization as these are relevant topics that I am interested in.
+        </p>
+      </div>
+
+      <div class="block40">
+        <h2 id="research">Research Insights</h2>
+        <p>
+          Remote work is becoming increasingly popular these days as we redefine what work means across space and time zones. This introduces new challenges to working in a team, especially for activities that used to be co-located such as Affinity Diagramming and Whiteboard Sketching. How do these common ideation activities translate to remote teams?
+          <br><br>
+          In order to find out, I reached out to a Product Designer working in a remote company. This helped me discover 3 insights:
+        </p>
+        <ol class="insightList">
+          <li>Remote designers still use sketches to quickly share their ideas with each other</li>
+          <li>Online collaboration tools are helpful when they need to brainstorm together</li>
+          <li>Documenting thinking processes is key to capturing and synthesizing ideas</li>
+        </ol>
+        <!-- TODO, make this look better -->
+      </div>
+
+      <div class="block40">
+        <h2 id="ideation">Ideation</h2>
+        <p>
+          With this new insight in mind, I started sketching ideas and features for an app that can be helpful for a designer in this situation.
+        </p>
+        <figure>
+          <img src="img/creat/process-ideation-crazy8.jpg" alt="crazy eight exercise">
+          <figcaption>A Crazy Eight exercise helped me quickly sketch out ideas without spending too much time on each one</figcaption>
+        </figure>
+        <p>
+          The general idea was an app to help remote collaborators work together through a shared digital space. It would combine both physical and digital artifacts generated throughout the design process to form a concept.
+        </p>
+        <figure>
+          <img src="img/creat/process-ideation-taskFlow.png" alt="crazy eight exercise">
+          <figcaption>A Crazy Eight exercise helped me quickly sketch out ideas without spending too much time on each one
+          </figcaption>
+        </figure>
+        <p>
+          At one point, I realized I was teetering very closely towards existing collaborative whiteboarding tools such as Miro or Mural. It didn’t make sense to create a similar tool, especially for a mobile interface which is not well suited for this type of productive work.
+          <br><br>
+          I decided to pivot slightly to focus less on real-time remote collaboration and more on the idea management process as I believe there is lots of potential in organizing and documenting ideas across the team even asynchronously.
+        </p>
+      </div>
+
+      <div class="block40">
+        <h2 id="paper">Paper Prototyping</h2>
+        <p>
+          As this app tries to push the benefits of working with tangible processes, it would be quite awkward if I didn’t create some paper prototypes to explore the interaction flows.
+          <br><br>
+          My first prototype was quickly put together but testing it with users helped me get a sense of how the flow felt and how to structure the navigation between screens.
+        </p>
+      </div>
+      <div class="block60">
+        <div class="imageDuo">
+          <img src="img/creat/process-paper-1.jpg" alt="paper prototype version 1">
+          <img src="img/creat/process-paper-testing.jpg" alt="testing paper prototype">
+        </div>
+        <figcaption>One of the advantages of paper prototyping is being able to quickly put one together and gather immediate feedback</figcaption>
+      </div>
+      <div class="block40 flexWrapper flexCenter">
+        <div class="halfBlock">
+          <p>
+            The second iteration was more detailed and I explored how the interactions between screens felt. I also played with
+            different menu bar placements. The feedback I got from this round was more concrete and actionable. For example, one
+            comment I received pointed out potential navigation issues and also suggested features like PDF Exporting.
+          </p>
+        </div>
+        <div class="halfBlock">
+          <img src="img/creat/process-paper-2.jpg" alt="paper prototype version 2">
+        </div>
+      </div>
+      <div class="block40">
+        <p>
+          The final paper prototype I did focused on Information Architecture and incorporated common UI patterns like a bottom Tab Navigation. At this point I had a pretty good grasp on the direction the UI was heading and it was time to start wireframing with digital tools.
+        </p>
+        <img src="img/creat/process-paper-3.jpg" alt="paper prototype version 3">
+      </div>
+
+      <div class="block40">
+        <h2 id="wireframing">Wireframing</h2>
+        <p>My wireframes started at a medium fidelity as my paper prototypes were a good base to work off from. I concentrated on forming good UI flows and utilizing mobile UI patterns such as modal views and Tab Navigation.</p>
+      </div>
+      <div class="block100">
+        <img src="img/creat/process-wireframe.png" alt="wireframes">
+      </div>
+
+      <div class="block40">
+        <h2 id="testing">Testing and Refinements</h2>
+        <p>
+          The wireframes were put together into an Invision Prototype to properly test the interaction flow with. Testing at this level of fidelity provided detailed feedback that I used to iterate my design with. Even though I only created certain flows, adding functional elements like a working hamburger menu made the app feel more reals when put in the user’s hand.
+        </p>
+        <img class="inlineImage" src="img/creat/process-testing.jpg" alt="testing prototype">
+        <!-- TODO: replace this image with a prototype on phone -->
+        <p>Some simple refinements I did that made a big difference:</p>
+        <figure>
+          <img src="img/creat/process-refinement-tabs.png" alt="refining the tabs">
+          <figcaption>Changing the Tile Navigation from rectangular tiles to pointed arrows suggested a flow that made each step immediately clear as part of a process rather than unordered pages.</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="img/creat/process-refinement-groups.png" alt="adding color and IA to groups">
+          <figcaption>Some IA restructuring and group colors to make the Ideas List View more immediately clear.</figcaption>
+        </figure>
+      </div>
+
+      <div class="block40">
+        <h2 id="final">Final Design</h2>
+        <p>
+          Due to the short timeframe of the project, I focused more on the interaction design, so there was less priority placed on polishing the UI and visual branding. My final prototype is decently high fidelity, but refining the visual design as future work will give the app a much more cohesive feel.
+        </p>
+      </div>
+      <div class="block80">
+        <img src="img/creat/process-final-goalConcept.png" alt="goal concept screens">
+        <img src="img/creat/process-final-ideas.png" alt="ideas screen">
+        <img src="img/creat/process-final-ideasEmpty.png" alt="idea empty state screen">
+        <img src="img/creat/process-final-ideasSelected.png" alt="idea selection screen">
+        <img src="img/creat/process-final-artifact.png" alt="artifact edit screen">
+      </div>
+    </section>
+
+
+    <!-- outcomes section -->
+    <section id="outcomes">
+      <div class="sectionBlock blue">
+        <h3>OUTCOMES</h3>
+        <h1>To be continued...</h1>
+      </div>
+
+      <div class="block40">
+        <h2>Future Work</h2>
+        <p>
+          The end result of this project is just a very early exploration into a tool that can aid designers during the design process. The goal was to create an app to help organize the ideation process. The logical next step is to test whether CREAT can actually achieve that. This will involve setting up a situation where users are actively using this app as a part of the ideation process to test the viability of these ideas in practice.
+          <br><br>
+          From early on, CREAT was intended to be a tool that teams can integrate into their collaborative workflow. It was not meant to be a single replacement for every feature a team needs to work together. In our current workflows, we did not yet explore deeply into how teams would collaborate using this tool and is the next area to explore for sure. Seeing how CREAT can integrate with other tools will be key to creating a useful collaborative environment.
+        </p>
+
+        <h2>Lessons Learnt</h2>
+        <p>
+          While this was a solo project, there were many opportunities to get feedback through critique sessions with my classmates. Being able to loop the feedback directly into our next iterations helped us develop our designs in ways we wouldn’t have been able to otherwise.
+          <br><br>
+          My initial concept was so vague but I ended up with an app concept that I am quite happy with. If I were to go back, I could have explored it in many of the other directions but I’m sure the design process I followed will hold true no matter what I design in the future.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- next project -->
+    <section class="block60 nextProject">
+      <div>
+        <!--this div wrapper needed for some reason-->
+        <p class="nextProjectLabel">next project</p>
+        <a href="/" class="nextProjectLink">
+          <h2>Travel Journal App</h2>
+          <img class="arrowNextProject" src="img/icons/arrow-right.svg" alt="arrow">
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p class="rightText">&copy;2019 designed and coded by peter buk</p>
+  </footer>
+
+
+  <script>
+    var spy = new Gumshoe('#outlineBlock a', {
+      nested: true,
+      nestedClass: 'active-parent'
+    });
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

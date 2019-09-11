@@ -70,10 +70,10 @@ hr {
   background-color: rgba(255, 228, 199, 0.6);
 }
 .blue {
-  background-color: #87CDFF;
+  background-color: rgb(198, 231, 255);
 }
 .blue-lite {
-  background-color: rgba(135, 205, 255, 0.6);
+  background-color: rgba(198, 231, 255, 0.8);
 }
 
 
@@ -108,6 +108,11 @@ section *:last-child {
   width: 40vw;
 }
 
+.flexWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
 
 /* image blocks */
 .imageDuo {
@@ -115,6 +120,7 @@ section *:last-child {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
+  margin-bottom: 0.6rem;
 }
 .imageTrio {
   grid-column: span 12;
@@ -126,10 +132,11 @@ section *:last-child {
 
 /* case study overview blocks */
 .overviewBlock {
+  /* TODO */
   display: flex;
 }
 .halfBlock {
-  width: 50%;
+  width: 48%;
 }
 .thirdBlock {
   width: 33.3%;
@@ -231,6 +238,7 @@ figcaption {
 }
 
 
+
 /**************
 	Custom Blocks
 **************/
@@ -313,6 +321,9 @@ figcaption {
 #outlineBlock li.hover {
   font-weight: 700;
 }
+#outlineBlock li.active-parent {
+  font-weight: 700;
+}
 
 .outlineLabel {
   font-size: 0.8rem;
@@ -391,6 +402,21 @@ progress::-webkit-progress-bar {
 }
 
 
+.insightList {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Effra", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+.insightList li {
+  margin-bottom: 2rem;
+}
+
+
+
 /**************
 	Header
 **************/
@@ -464,7 +490,14 @@ img {
 }
 
 figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
+  margin-bottom: 2rem;
+}
+figure img {
+  margin-bottom: 0.5rem;
 }
 
 #profile {
