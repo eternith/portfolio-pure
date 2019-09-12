@@ -24,7 +24,6 @@ $(window).on("load", function () {
   progressBar.attr("max", max); 
 });
 
-var outlineBlockVisible = false;
 
 // update on scroll
 var updateProgressBar = function() {
@@ -33,9 +32,11 @@ var updateProgressBar = function() {
 
   // show/hide outlineBlock after below certain pixels
   if ($(window).width() > 768) {
-    if (!outlineBlockVisible && value > 200 ) {
+    if (value > 750 ) {
       $("#outlineBlock").fadeIn();
-      outlineBlockVisible = true;
+    }
+    else {
+      $("#outlineBlock").fadeOut();
     }
   }
 };
