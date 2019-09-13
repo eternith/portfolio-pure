@@ -97,7 +97,7 @@ section *:last-child {
 }
 .block100 {
   width: 100vw;
-  max-width:100%;
+  max-width: 100%;
 }
 .block80 {
   width: 80vw;
@@ -109,7 +109,16 @@ section *:last-child {
   width: 40vw;
 }
 
+.block100{ 
+  z-index: 20;
+  position: relative;
+}
+
 .flexWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.flexWrapperKeep { /* Don't convert to columns in responsive */
   display: flex;
   justify-content: space-around;
 }
@@ -133,11 +142,42 @@ section *:last-child {
 
 /* case study overview blocks */
 .overviewBlock {
-  /* TODO */
-  display: flex;
+  display: grid;
+  /* grid-template-columns: 30% 30% 20% 20%; */
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.2rem;
+  row-gap: 1.2rem;
 }
+#aboutBlock {
+  /* grid-area: 1 / 1 / 2 / 3; */
+  grid-area: 1 / 1 / 2 / 3;
+}
+#roleBlock {
+  /* grid-area: 2 / 1 / 3 / 2; */
+  grid-area: 2 / 1 / 3 / 2;
+}
+#timelineBlock {
+  /* grid-area: 2 / 2 / 3 / 3; */
+  grid-area: 3 / 1 / 4 / 2;
+}
+#methodsBlock {
+  grid-area: 1 / 3 / 3 / 4;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+#toolsBlock {
+  grid-area: 1 / 4 / 3 / 5;
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+
+}
+
+
+
+
 .halfBlock {
   width: 48%;
+  display: inline-block;
 }
 .thirdBlock {
   width: 33.3%;
@@ -153,11 +193,15 @@ section *:last-child {
   display: flex; 
   margin-bottom: 8rem;
 }
-.flexCenter {
+.flexHorizontalCenter {
   align-items: center;
 }
 .blockFlex:last-child {
   margin-bottom: 0;
+}
+.flexVerticalCenter {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -174,13 +218,16 @@ section *:last-child {
 .hero {
   padding: 4rem 0;
 }
+.heroHalf {
+  width: 50%;
+}
 
-.heroLeft {
+.heroLeftWide {
   width: 20%;
   margin-right: 5%;
   margin-left: 12.5%;
 }
-.heroRight {
+.heroRightWide {
   width: 50%;
   margin-right: 12.5%;
 }
@@ -557,20 +604,34 @@ figure img {
   margin-bottom: 2rem;
 }
 
-
-
+#creatHero {
+  width: 80%;
+  margin: auto;
+}
+#creatLogo {
+  width: 12rem;
+}
 
 /**************
 	RESPONSIVE
 **************/
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   header, footer, .block60 {
     width: 80vw;
   }
 
   .block40 {
     width: 60vw;
+  }
+
+  .heroLeftWide {
+    width: 80vw;
+    margin-left: 8%;
+  }
+  .heroRightWide {
+    width: 80vw;
+    margin-right: 8%;
   }
 }
 
@@ -580,10 +641,14 @@ figure img {
     width: 80vw;
   }
 
-  .blockFlex {
+  .blockFlex, .flexWrapper {
     flex-direction: column;
   }
-  
+  .heroLeftWide, .heroRightWide {
+    width: 80vw;
+    margin: 0 auto 2rem;
+  }
+
   header {
     flex-direction: column;
     margin: 2rem auto;
@@ -603,6 +668,9 @@ figure img {
     width: 80vw;
     margin-bottom: 2rem;
   }
+  .heroHalf {
+    width: 80vw;
+  }
 
 
   #tldrBlock {
@@ -616,18 +684,25 @@ figure img {
   }
 
   .overviewBlock {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    row-gap: 0.6rem;
   }
-  .twoThirdBlock, .thirdBlock {
+  #aboutBlock, #roleBlock, #toolsBlock, #methodsBlock, #timelineBlock {
+    grid-area: none;
+    grid-column: span 1;
+    grid-row: auto;
+  }
+  .twoThirdBlock, .thirdBlock, .halfBlock {
     width: 80vw;
   }
+
 
   #outlineBlock {
     display: none;
   }
 
   .sectionBlock {
-    padding: 3rem 20vw;
+    padding: 3rem 10vw;
   }
 
   .imageDuo, .imageTrio {
@@ -649,4 +724,10 @@ figure img {
   h1 {
     margin-bottom: 1rem;
   }
+
+  .wideLineBreak {
+    display: none;
+  }
+
+
 }
