@@ -542,7 +542,6 @@ nav ul li a:hover {
 }
 
 a {
-  text-decoration: none;
   color: #595959;
 }
 
@@ -561,11 +560,15 @@ a {
   font-size: 1rem;
 }
 
+ul li a, .nextProject div a {
+  text-decoration: none;
+}
+
 /**************
 	Images
 **************/
 
-img {
+img, video {
   width: 100%;
 }
 
@@ -619,6 +622,10 @@ figure img {
 @media (max-width: 992px) {
   header, footer, .block60 {
     width: 80vw;
+  }
+
+  .sectionBlock {
+    padding: 3rem 20vw;
   }
 
   .block40 {
