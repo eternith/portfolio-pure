@@ -72,50 +72,51 @@
     <section id="overview">
       <div class="block100 flexWrapper flexHorizontalCenter orange hero">
         <div class="heroLeftWide">
-          <h1>Pipeline Incidents Data Visualization</h1>
+          <h1>Pipeline Incidents</h1>
           <!-- <div class="dividerLine"></div> -->
-          <h3 class="heroTagline">Making open data <br class="wideLineBreak">publicly accessible</h3>
+          <h3 class="heroTagline">Making open data publicly accessible</h3>
+          <h3 class="heroType">Data Visualization Design</h3>
         </div>
         <div class="heroRightWide">
           <img src="img/incidents/hero-browserMockup.png" alt="pipeline incidents browser mockup">
         </div>
       </div>
 
-      <div class="block60 overviewBlock">
+      <div class="block40 overviewBlock">
         <div id="aboutBlock">
           <h4>about</h4>
-          <p>Pipeline Incidents is an interactive data visualization featuring open data from National Energy Board-regulated pipelines. It is customizable to allow for both broad and targeted explorations into the dataset.</p>
+          <p>Pipeline Incidents is an interactive data visualization featuring open data from National Energy Board-regulated pipelines. It is customizable to allow for both broad and targeted explorations into the dataset. The visualization is available online <a href="https://apps2.neb-one.gc.ca/pipeline-incidents/">here</a>.</p>
         </div>
 
         <div id="roleBlock">
           <h4>role</h4>
           <p>
             Data Visualization Designer<br>
-            Interaction Designer<br>
-            HCI Researcher
+            <!-- Interaction Designer<br> -->
+            <!-- HCI Researcher -->
           </p>
-        </div>
-        
-        <div id="timelineBlock">
           <h4>timeline</h4>
           <p>
             8 months (2017/04 - 2017/12)
           </p>
         </div>
+        
+        <!-- <div id="timelineBlock">
+          
+        </div> -->
 
         <div id="methodsBlock">
           <h4>methods</h4>
           <p>
             Stakeholder Workshops<br>
-            Data Analysis<br>
-            Sketching<br>
+            Tableau Analysis<br>
             Paper Prototypes<br>
             Interactive Prototypes<br>
             Style Guides
           </p>
         </div>
 
-        <div id="toolsBlock">
+        <!-- <div id="toolsBlock">
           <h4>tools</h4>
           <p>
             Tableau<br>
@@ -123,7 +124,7 @@
             Adobe InDesign<br>
             Invision
           </p>
-        </div>
+        </div> -->
       </div>
       
     </section>
@@ -153,11 +154,68 @@
         <h3>SOLUTION</h3>
         <h1>Parallel Coordinates Visualization</h1>
       </div>
+
       <div class="block40">
         <p>
-          TODO
+          Pipeline Incidents is an interactive data visualization based on a <a href="https://www.juiceanalytics.com/writing/writing/parallel-coordinates">parallel coordinates plot</a>. In this type of visualization, data dimensions are divided into columns with lines flowing between them. The aggregate of these lines form a broad view of how the data is distributed.
         </p>
       </div>
+
+      <div class="block60 flexWrapperKeep flexHorizontalCenter">
+        <div class="halfBlock">
+          <p>
+            This visualization features 14 columns, each representing a key aspect of the data such as Region, Company, or Incident Type. The columns are then further broken into Categories. 
+            <br><br>
+            Incidents are represented by the lines flowing between the categories on the columns. The thicker the line, the more incidents that share those categories.
+          </p>
+        </div>
+        <div class="halfBlock">
+          <img class="imgBorder" src="img/incidents/solution-1.png" alt="columns and lines">
+        </div>
+      </div>
+
+      <div class="block60 flexWrapperKeep flexHorizontalCenter">
+        <div class="halfBlock">
+          <p>
+            Clicking on a category such as Alberta shows all related incidents in a list on the side. From here, individual incidents can be selected to see its distribution across the columns.
+          </p>
+        </div>
+        <div class="halfBlock">
+          <img class="imgBorder" src="img/incidents/solution-2.png" alt="incident list">
+        </div>
+      </div>
+
+      <div class="block60 flexWrapperKeep flexHorizontalCenter">
+        <div class="halfBlock">
+          <p>
+            The columns currently not shown can be found in the sidebar where they can be dragged into the main view.
+          </p>
+        </div>
+        <div class="halfBlock">
+          <img class="imgBorder" src="img/incidents/solution-3-sidebar.png" alt="incident sidebar">
+        </div>
+      </div>
+
+      <div class="block60 flexWrapperKeep flexHorizontalCenter">
+        <div class="halfBlock">
+          <p>
+            Categories can also be filtered to view only relevant incidents. This is helpful for focusing an exploration into
+            specific categories.
+            <br><br>
+            Here, we see incidents only from Transcanada Keystone Pipeline GP. We can filter down further into just 2015 incidents if we wanted.
+          </p>
+        </div>
+        <div class="halfBlock">
+          <img class="imgBorder" src="img/incidents/solution-4.png" alt="incident filter">
+        </div>
+      </div>
+
+      <div class="block40">
+        <p>
+          The key point of the design is that it is not just one visualization, but a whole system of visualizations based on the selected columns and filters. It provides a big picture view of the dataset while allowing for focused dives into areas of interest.
+        </p>
+      </div>
+
     </section>
 
 
@@ -223,8 +281,6 @@
           <img class="imgBorder" src="img/incidents/process-iteration-2.png" alt="visual iteration 2">
         </div>
         <figcaption>Variations on the placement of category columns. The selection sidebar list or expansion boxes had poor visual indicators and didn't make the cut.</figcaption>
-      </div>
-      <div class="block40">
         <p>
           After many rounds of iteration and feedback, we settled on a collapsed sidebar with staggered, cascading bars. This was analogous to pulling a book off a shelf to add to the current view.
         </p>
@@ -318,6 +374,8 @@
           After the first version of the visualization was launched, we had the chance to show it off at NEB headquarters to an assortment of stakeholders from data analysts who work regularly with the data, to engineers working in the field. The visualization created a positive feedback loop where it gave institutions a new lens on their data practice, which results in better data overall.
         </p>
         <img class="inlineImage" src="img/incidents/outcomes-neb.png" alt="neb product launch">
+      </div>
+      <div class="block40">
         <h2 id="tedx">TEDx Calgary</h2>
         <p>
           We were also given the incredible opportunity to showcase the visualization at 2017 TEDx Calgary. The visualization was part of the Interactions exhibit and we had the chance to directly engage members of the public. It resulted in lots of good discussion around how the visualization can help people form their own opinions rather than through media’s bias perspective. We were suggested deeper exploration into incidents, but this showed that our goal of encouraging public dialogue through visualizations was definitely on the right track.
@@ -365,7 +423,11 @@
 
   <script>
     var spy = new Gumshoe('#outlineBlock a');
-    var scroll = new SmoothScroll('a[href*="#"]');
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true,
+      easing: "easeOutQuad"
+    });
   </script>
   <script src="js/script.js"></script>
 </body>
