@@ -22,7 +22,7 @@
 }
 
 /************************ 
-HTML and main Body Styles 
+Resets
 ************************/
 
 * {
@@ -31,34 +31,10 @@ HTML and main Body Styles
 	box-sizing: border-box;
 }
 
-
 h1, h2, h3, p, ul, body {
 	margin: 0;
 	padding: 0;
 }
-
-body {
-  color: #595959;
-  width: 100%;
-}
-
-main {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-}
-
-footer {
-  width: 60vw;
-  margin: 3rem auto;
-  justify-content: flex-end;
-}
-
-hr {
-  opacity: 0.5;
-  border-width: 2px;
-}
-
 
 /**************
 	Colors
@@ -78,50 +54,69 @@ hr {
 }
 
 
+/************************ 
+HTML and main Body Styles 
+************************/
+
+body {
+  color: #595959;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+hr {
+  opacity: 0.5;
+  border-width: 2px;
+}
+
+
 /**************
 	Layout
 **************/
 
-section {
-  margin: 0 0 4rem;
-}
-section *:last-child {
+section:last-child { /* no margin on last child of any section children */
   margin-bottom: 0;
 }
-
 
 /* vw block layouts */
 .block100 {
   width: 100vw;
   max-width: 100%;
-  margin: 0 auto 5rem;
-}
-.block80 {
-  width: 80vw;
-  margin: 0 auto 5rem;
-}
-.block60 {
-  width: 60vw;
-  margin: 0 auto 2rem;
-}
-.block40 {
-  width: 40vw;
-  margin: 0 auto 5rem;
-}
+  margin: 0 auto;
 
-.block100{ 
   z-index: 20;
   position: relative;
 }
+.block80 {
+  width: 80vw;
+  margin: 0 auto;
+}
+.block60 {
+  width: 60vw;
+  margin: 0 auto;
+}
+.block40 {
+  width: 40vw;
+  margin: 0 auto;
+}
 
-.flexWrapper {
-  display: flex;
-  justify-content: space-around;
+
+/* margin classes */
+.marginBot-2 {
+  margin-bottom: 2rem;
 }
-.flexWrapperKeep { /* Don't convert to columns in responsive */
-  display: flex;
-  justify-content: space-around;
+.marginBot-5 {
+  margin-bottom: 5rem;
 }
+.marginBot-8 {
+  margin-bottom: 8rem;
+}
+
 
 
 /* image blocks */
@@ -175,46 +170,33 @@ section *:last-child {
 }
 
 
+/* FLEX double column blocks */
+.flexWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.flexWrapperKeep { /* Don't convert to columns in responsive */
+  display: flex;
+  justify-content: space-around;
+}
 .halfBlock {
   width: 48%;
   display: inline-block;
-}
-.thirdBlock {
-  width: 33.3%;
-}
-.twoThirdBlock {
-  width: 64%;
-  padding-right: 2.66%;
-}
-
-
-/* main page blocks */
-.blockFlex {
-  display: flex; 
-  margin-bottom: 8rem;
-}
-.flexHorizontalCenter {
-  align-items: center;
-}
-.blockFlex:last-child {
-  margin-bottom: 0;
 }
 .flexVerticalCenter {
   display: flex;
   justify-content: center;
 }
-
-
-/* about page blocks */
-.left40 {
-  width: 40%;
-}
-.right60 {
-  width: 60%;
+.flexHorizontalCenter {
+  align-items: center;
 }
 
-.front-hero {
-  padding: 10rem 0;
+
+.blockFlex {
+  display: flex; 
+}
+.blockFlex:last-child { /* no margin on last block */
+  margin-bottom: 0;
 }
 
 
@@ -243,6 +225,55 @@ section *:last-child {
 
 
 
+/**************
+	about.html
+**************/
+.left40 {
+  width: 40%;
+}
+.right60 {
+  width: 60%;
+}
+.overviewText {
+  font-family: "Effra", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+}
+.aboutTLDR {
+  margin: 0;
+}
+#profile {
+  width: 70%;
+}
+
+
+/**************
+	index.html
+**************/
+.front-hero {
+  padding: 10rem 0;
+}
+#hero-intro-header {
+  font-size: 2.4rem;
+  margin-bottom: 2.8rem;
+}
+#hero-intro-text {
+  width: 60%;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2.8rem;
+}
+
+.subtext {
+  font-style: italic;
+  margin-bottom: 1.6rem;
+}
+.leftText {
+  padding-right: 3rem;
+  margin-bottom: 1.6rem;
+}
 
 
 /**************
@@ -285,30 +316,22 @@ p {
   margin-bottom: 2rem;
 }
 
+a {
+  color: #595959;
+}
+ul li a, .nextProject div a {
+  text-decoration: none;
+}
+
 figcaption {
   font-size: 0.8rem;
   text-align: center;
 }
 
-.aboutTLDR {
-  margin: 0;
-}
-
-.overviewText {
-  font-family: "Effra", sans-serif;
-  font-size: 1.875rem;
-  font-weight: 300;
-  margin-bottom: 1.6rem;
-}
-
-.subtext {
-  font-style: italic;
-  margin-bottom: 1.6rem;
-}
-
 .textCenter {
   text-align: center;
 }
+
 
 .heroTagline, .heroType  {
   font-family: "Effra", sans-serif;
@@ -316,9 +339,7 @@ figcaption {
   font-size: 1.3rem;
   line-height: 1.8rem;
   margin-bottom: 2rem;
-  
 }
-
 .heroType {
   font-style: italic;
   font-size: 1.2rem;
@@ -368,14 +389,17 @@ figcaption {
   padding: 0.625rem;
 }
 
-/* large separated full-width header block */
+/* full-width color header section separators */
 .sectionBlock {
   padding: 6rem 30vw;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   z-index: 5;
 }
+.sectionBlock h1 {
+  margin-bottom: 0;
+}
 
-/* floating ToC */
+/* floating outline block */
 #outlineBlock {
   top: 10%;
   left: 0%;
@@ -396,7 +420,6 @@ figcaption {
 }
 
 #outlineBlock li.active {
-  /* list-style-image: url("../img/icons/tri-selector.svg"); */
   background-image: url("../img/icons/tri-selector.svg");
   background-repeat: no-repeat;
   background-position: left center;
@@ -468,45 +491,46 @@ progress::-webkit-progress-bar {
 	background-color: transparent;
 }
 
-#progressBarOrange {
-  color: #FFCE8F;
-}
-#progressBarOrange::-webkit-progress-value {
-	background-color: #FFCE8F;
-}
-#progressBarOrange::-moz-progress-bar {
-	background-color: #FFCE8F;
-}
-
-#progressBarBlue {
-  color: #87CDFF;
-}
-#progressBarBlue::-webkit-progress-value {
-	background-color: #87CDFF;
-}
-#progressBarBlue::-moz-progress-bar {
-	background-color: #87CDFF;
-}
+#progressBarOrange { color: #FFCE8F; }
+#progressBarOrange::-webkit-progress-value { background-color: #FFCE8F; }
+#progressBarOrange::-moz-progress-bar { background-color: #FFCE8F; }
+#progressBarBlue { color: #87CDFF; }
+#progressBarBlue::-webkit-progress-value { background-color: #87CDFF; }
+#progressBarBlue::-moz-progress-bar { background-color: #87CDFF; }
 
 
+/* blockquote like insights */
 .insightList {
   display: flex;
   flex-direction: column;
 
   font-family: "Effra", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 300;
   line-height: 2rem;
 }
 .insightList li {
   margin-bottom: 2rem;
 }
-
+.insightList li:last-child {
+  margin-bottom: 0;
+}
 
 
 /**************
-	Header
+	Header/Footer
 **************/
+
+footer {
+  width: 60vw;
+  margin: 3rem auto;
+  justify-content: flex-end;
+}
+footer p {
+  text-align: right;
+  font-weight: 300;
+  font-size: 1rem;
+}
 
 /* header layout */
 header {
@@ -520,11 +544,12 @@ header {
   margin: 2rem auto;
 }
 
-
 #logo {
   width: 18rem;
 }
 
+
+/* navigation */
 nav ul {   
   display: flex;
   justify-content: space-between;
@@ -547,45 +572,11 @@ nav ul li a:hover {
   color: rgb(165, 165, 165);
   transition: all 300ms ease;
 } 
-
 .activePage {
   font-weight: 700;
 }
 
-a {
-  color: #595959;
-}
 
-/**************
-	Special text
-**************/
-
-#hero-intro-header {
-  font-size: 2.4rem;
-  margin-bottom: 2.8rem;
-}
-#hero-intro-text {
-  width: 60%;
-  line-height: 2.4rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 2.8rem;
-}
-
-.leftText {
-  padding-right: 3rem;
-  margin-bottom: 1.6rem;
-}
-
-.rightText {
-  text-align: right;
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-ul li a, .nextProject div a {
-  text-decoration: none;
-}
 
 /**************
 	Images
@@ -600,15 +591,13 @@ figure {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  margin-bottom: 2rem;
 }
 figure img {
   margin-bottom: 0.5rem;
 }
 
-#profile {
-  width: 70%;
-  margin-bottom: 2rem;
+.imgBorder {
+  border: 1px solid #aaa;
 }
 
 .icon {
@@ -616,18 +605,9 @@ figure img {
   margin-top: 0.625rem;
   margin-right: 1.5rem;
 }
-
 .arrow {
   width: 1.2rem;
   margin-left: 0.4rem;
-}
-
-.imgBorder {
-  border: 1px solid #aaa;
-}
-
-.inlineImage {
-  margin-bottom: 2rem;
 }
 
 #creatHero {
@@ -643,7 +623,7 @@ figure img {
 **************/
 
 @media (max-width: 992px) {
-  header, footer, .block60 {
+  header, footer, .block60, .heroLeftWide, .heroRightWide {
     width: 80vw;
   }
 
@@ -656,18 +636,16 @@ figure img {
   }
 
   .heroLeftWide {
-    width: 80vw;
     margin-left: 8%;
   }
   .heroRightWide {
-    width: 80vw;
     margin-right: 8%;
   }
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
-
-  .block40 {
+  .block40, .heroLeftWide, .heroRightWide, .heroHalf {
     width: 80vw;
   }
 
@@ -675,7 +653,6 @@ figure img {
     flex-direction: column;
   }
   .heroLeftWide, .heroRightWide {
-    width: 80vw;
     margin: 0 auto 2rem;
   }
 
@@ -697,9 +674,6 @@ figure img {
   .left40, .right60, #hero-intro-text {
     width: 80vw;
     margin-bottom: 2rem;
-  }
-  .heroHalf {
-    width: 80vw;
   }
 
 
@@ -726,7 +700,6 @@ figure img {
     width: 80vw;
   }
 
-
   #outlineBlock {
     display: none;
   }
@@ -738,8 +711,9 @@ figure img {
   .imageDuo, .imageTrio {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
   }
-  figure {
+  .imageDuo img, .imageTrio img {
     margin-bottom: 1rem;
   }
 
@@ -754,10 +728,5 @@ figure img {
   h1 {
     margin-bottom: 1rem;
   }
-
-  .wideLineBreak {
-    display: none;
-  }
-
 
 }

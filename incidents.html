@@ -70,8 +70,8 @@
   <!-- main content -->
   <main>
     <!-- overview section -->
-    <section id="overview">
-      <div class="block100 flexWrapper flexHorizontalCenter orange hero">
+    <section id="overview" class="marginBot-5">
+      <div class="block100 flexWrapper flexHorizontalCenter orange hero marginBot-5">
         <div class="heroLeftWide">
           <h1>Pipeline Incidents</h1>
           <!-- <div class="dividerLine"></div> -->
@@ -83,7 +83,7 @@
         </div>
       </div>
 
-      <div class="block40 overviewBlock">
+      <div class="block40 overviewBlock marginBot-5">
         <div id="aboutBlock">
           <h4>about</h4>
           <p>Pipeline Incidents is an interactive data visualization featuring open data from National Energy Board-regulated pipelines. It is customizable to allow for both broad and targeted explorations into the dataset. The visualization is available online <a href="https://apps2.neb-one.gc.ca/pipeline-incidents/">here</a>.</p>
@@ -132,12 +132,12 @@
 
 
     <!-- problem section -->
-    <section id="problem">
-      <div class="sectionBlock orange">
+    <section id="problem" class="marginBot-5">
+      <div class="sectionBlock orange marginBot-5">
         <h3>PROBLEM</h3>
         <h1>Making open data accessible</h1>
       </div>
-      <div class="block40">
+      <div class="block40 marginBot-5">
         <p>
           This visualization was part of the <a href="http://ilab.cpsc.ucalgary.ca/energyvis/">Energy Visualization Project</a>: a multi-year collaboration between Canada’s National Energy Board (NEB) and the University of Calgary’s Interactions Lab where I had the role of Data Visualization Designer.
           <br><br>
@@ -150,19 +150,19 @@
 
 
     <!-- solution section -->
-    <section id="solution">
-      <div class="sectionBlock orange">
+    <section id="solution" class="marginBot-5">
+      <div class="sectionBlock orange marginBot-5">
         <h3>SOLUTION</h3>
         <h1>Parallel Coordinates Visualization</h1>
       </div>
 
-      <div class="block40">
+      <div class="block40 marginBot-2">
         <p>
           Pipeline Incidents is an interactive data visualization based on a <a href="https://www.juiceanalytics.com/writing/writing/parallel-coordinates">parallel coordinates plot</a>. In this type of visualization, data dimensions are divided into columns with lines flowing between them. The aggregate of these lines form a broad view of how the data is distributed.
         </p>
       </div>
 
-      <div class="block60 flexWrapperKeep flexHorizontalCenter">
+      <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
         <div class="halfBlock">
           <p>
             This visualization features 14 columns, each representing a key aspect of the data such as Region, Company, or Incident Type. The columns are then further broken into Categories. 
@@ -175,7 +175,7 @@
         </div>
       </div>
 
-      <div class="block60 flexWrapperKeep flexHorizontalCenter">
+      <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
         <div class="halfBlock">
           <p>
             Clicking on a category such as Alberta shows all related incidents in a list on the side. From here, individual incidents can be selected to see its distribution across the columns.
@@ -186,7 +186,7 @@
         </div>
       </div>
 
-      <div class="block60 flexWrapperKeep flexHorizontalCenter">
+      <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
         <div class="halfBlock">
           <p>
             The columns currently not shown can be found in the sidebar where they can be dragged into the main view.
@@ -197,7 +197,7 @@
         </div>
       </div>
 
-      <div class="block60 flexWrapperKeep flexHorizontalCenter">
+      <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
         <div class="halfBlock">
           <p>
             Categories can also be filtered to view only relevant incidents. This is helpful for focusing an exploration into
@@ -211,7 +211,7 @@
         </div>
       </div>
 
-      <div class="block40">
+      <div class="block40 marginBot-5">
         <p>
           The key point of the design is that it is not just one visualization, but a whole system of visualizations based on the selected columns and filters. It provides a big picture view of the dataset while allowing for focused dives into areas of interest.
         </p>
@@ -221,41 +221,41 @@
 
 
     <!-- process section -->
-    <section id="process">
-      <div class="sectionBlock orange">
+    <section id="process" class="marginBot-5">
+      <div class="sectionBlock orange marginBot-5">
         <h3>PROCESS</h3>
         <h1>From Data to Design</h1>
       </div>
 
       <!-- workshop subsection -->
-      <div class="block40">
+      <div class="block40 marginBot-5">
         <h2 id="workshop">Stakeholder Workshops</h2>
         <p>
           The project kicked off with stakeholder workshops involving clients as well as data experts from the NEB. It was a chance for us to get to know each other’s role in the project better as well as create mutual understanding for the goals this visualization should cover.
           <br><br>
           These data-driven workshops encouraged cross-functional collaboration and produced many insightful conversations. We learned about stories hidden in the data that wouldn’t have been clear without the background context from experts that have been working with this data for decades.
         </p>
-        <img class="inlineImage" src="img/incidents/process-workshop-data.png" alt="data workshop">
+        <img src="img/incidents/process-workshop-data.png" alt="data workshop">
       </div>
 
       <!-- data analysis subsection -->
-      <div class="block40">
+      <div class="block40 marginBot-5">
         <h2 id="data-analysis">Data Analysis</h2>
         <p>
           With the new insight in mind, we went back and did a deep dive into the dataset with tools such as Tableau, spreadsheets, and scripts. This analysis process involved manipulating the data in different ways to uncover interesting trends and angles to approach the dataset.
           <br><br>
           The result of this analysis was to gain familiarity with the data characteristics to be used in the design phase as we brainstorm how to visually represent the data. The goal of designing a data visualization is not to present one static view, but create a system that viewers can use to discover and explore the data for themselves.
         </p>
-        <img class="inlineImage imgBorder" src="img/incidents/process-dataAnalysis.png" alt="data workshop">
+        <img class="imgBorder" src="img/incidents/process-dataAnalysis.png" alt="data workshop">
       </div>
 
       <!-- ideation subsection -->
-      <div class="block40">
+      <div class="block40 marginBot-5">
         <h2 id="ideation">Ideation</h2>
         <p>
           Working with a dataset as rich as this one, there were countless directions we could have taken, so we spent a considerable amount of time brainstorming ideas through individual sketching as well as group workshops.
         </p>
-        <figure>
+        <figure class="marginBot-2">
           <img class="" src="img/incidents/process-ideation-sketch-wall.png" alt="sketch wall">
           <figcaption>This wall in our <i>war room</i> shows how much time we dedicated to ideation.</figcaption>
         </figure>
@@ -264,15 +264,15 @@
           <br><br>
           However, we decided the narrow focus on map-driven interaction limited the exploration scope of the dataset too much. I learned a valuable lesson here on the benefits of quickly iterating with lower fidelity mockups instead of wasting time polishing higher fidelity mockups that end up going in the wrong direction.
         </p>
-        <img class="inlineImage imgBorder" src="img/incidents/process-ideation-map.png" alt="map mockup">
+        <img class="marginBot-2 imgBorder" src="img/incidents/process-ideation-map.png" alt="map mockup">
         <p>
           Ultimately, we decided on a parallel coordinates concept that a team member drafted up. This design was able to express various aspects of the data simultaneously, allowing users to see broad overviews as well as deeper exploration into individual categories of interest.
         </p>
-        <img class="inlineImage" src="img/incidents/process-ideation-parallelcoor.png" alt="parallel coordinates sketch">
+        <img src="img/incidents/process-ideation-parallelcoor.png" alt="parallel coordinates sketch">
       </div>
 
       <!-- iteration subsection -->
-      <div class="block40">
+      <div class="block40 marginBot-2">
         <h2 id="iteration">Visual Design Iteration</h2>
         <p>
           Now that we have a visualization concept in mind, we expanded again to explore the visual design and how to exactly map out the data into visual elements. Rather than abandoning my timeline+map idea, we found a way to incorporate elements of it into this design. The timeline naturally fits as a column while the map can be represented as a wide column with connecting lines pointing to the rough location of the incident.
@@ -281,59 +281,59 @@
           <img class="imgBorder" src="img/incidents/process-iteration-1.png" alt="visual iteration 1">
           <img class="imgBorder" src="img/incidents/process-iteration-2.png" alt="visual iteration 2">
         </div>
-        <figcaption>Variations on the placement of category columns. The selection sidebar list or expansion boxes had poor visual indicators and didn't make the cut.</figcaption>
+        <figcaption class="marginBot-2">Variations on the placement of category columns. The selection sidebar list or expansion boxes had poor visual indicators and didn't make the cut.</figcaption>
         <p>
           After many rounds of iteration and feedback, we settled on a collapsed sidebar with staggered, cascading bars. This was analogous to pulling a book off a shelf to add to the current view.
         </p>
       </div>
-      <div class="block60">
+      <div class="block60 marginBot-2">
         <img class="imgBorder" src="img/incidents/process-iteration-final.png" alt="ui concept">
       </div>
-      <div class="block40">
+      <div class="block40 marginBot-5">
         <p>
           The color palette was meticulously chosen as it had to cover 14 columns with varying shades as well as satisfy strict client criteria while still looking cohesive.
         </p>
       </div>
 
       <!-- interaction subsection -->
-      <div class="block40">
+      <div class="block40 marginBot-2">
         <h2 id="interaction">Interaction Design</h2>
         <p>
           One of the most challenging aspects of the visualization was the Interaction Design. We had to differentiate between selecting a category (ex. all Alberta incidents) vs selecting an individual incident (ex. A specific fire incident in CHEECHAM, Alberta on Nov 1, 2012). 
           <br><br>
           Initially we handled this by a complicated set of click/hover interactions on the bars. There was also a separate click and hold interaction to summon the filter bo. Clearly there were too many interactions stack on top of the bars and it was not intuitive at all. Something had to be done.
         </p>
-        <figure>
-          <img class="inlineImage" src="img/incidents/process-interaction-table.png" alt="table of interaction">
+        <figure class="marginBot-2">
+          <img src="img/incidents/process-interaction-table.png" alt="table of interaction">
           <figcaption>
-            The fact that we needed a table to organize our interactions was already a bad sign.
+            The fact that we needed a table to organize our interactions was a bad sign.
           </figcaption>
         </figure>
         <p>
           I took on the task of organizing this mess into a new interaction flow that would be more intuitive to use. Paper prototypes of various UI components were created and brought to lab members who had never seen the project before. They were given a task to perform and to describe what they thought was the most intuitive action to take. This informal testing gave us insight into which interactions made sense or can easily be taught.
         </p>
-        <img class="inlineImage" src="img/incidents/process-interaction-paper.png" alt="paper prototype">
+        <img class="marginBot-2" src="img/incidents/process-interaction-paper.png" alt="paper prototype">
         <p>
           The key takeaway we got through this exercise was to separate out individual incident selection into a separate UI element. The Incident List was born as a replacement to hover interactions on the bar. This also made mobile support much easier even if it wasn’t a priority at the time. 
           <br><br>
           The incident list went through more iterations such as the placement of the list as well as using stars instead of pin icons for highlighting incidents.  At this point, we felt confident enough in the design to create interactive prototypes to test the interaction for certain flows.
         </p>
-        <img class="inlineImage imgBorder" src="img/incidents/process-interaction-list1.png" alt="incident list 1">
+        <img class="marginBot-2 imgBorder" src="img/incidents/process-interaction-list1.png" alt="incident list 1">
         <p>
           Having the starred section of the list at the top revealed a shifting problem where the bottom list moves as the top list expands. Had we not created this prototype, we might not have noticed this until it was implemented.
         </p>
-        <img class="inlineImage imgBorder" src="img/incidents/process-interaction-list2.png" alt="incident list 2">
+        <img class="marginBot-2 imgBorder" src="img/incidents/process-interaction-list2.png" alt="incident list 2">
         <p>
           The prototypes are no longer online, but a video was created to showcase the interactions to stakeholders and developers.
         </p>
       </div>
-      <div class="block60">
-        <video controls>
+      <div class="block60 marginBot-2">
+        <video class="imgBorder" controls>
           <source src="img/incidents/process-interaction-video.mp4" type="video/mp4">
           Your browser does not support this video.
         </video>
       </div>
-      <div class="block40">
+      <div class="block40 marginBot-5">
         <p>
           An important lesson we learned in this phase was how much insight even a tiny bit of testing can provide. Even though we were not able to go out and do more formal user testing, we were still able to validate our ideas through rudimentary prototyping and feedback with lab members. It is very easy to fall into the trap of thinking our interaction flows made sense but users rarely have the same mindset as the designer.
           <br><br>
@@ -352,7 +352,7 @@
           The Style Guide itself was an ongoing process of iteration as we learned what works best and how to communicate details to teams of different disciplines.
         </p>
       </div>
-      <div class="block60">
+      <div class="block60 marginBot-5">
         <div class="imageTrio">
           <img class="imgBorder" src="img/incidents/process-style-1.png" alt="style guide 1">
           <img class="imgBorder" src="img/incidents/process-style-2.png" alt="style guide 2">
@@ -364,24 +364,24 @@
     
 
     <!-- outcomes section -->
-    <section id="outcomes">
-      <div class="sectionBlock orange">
+    <section id="outcomes" class="marginBot-5">
+      <div class="sectionBlock orange marginBot-5">
         <h3>OUTCOMES</h3>
         <h1>Engaging with the Public</h1>
       </div>
-      <div class="block40">
+      <div class="block40 marginBot-5">
         <h2 id="launch">Product Launch</h2>
         <p>
           After the first version of the visualization was launched, we had the chance to show it off at NEB headquarters to an assortment of stakeholders from data analysts who work regularly with the data, to engineers working in the field. The visualization created a positive feedback loop where it gave institutions a new lens on their data practice, which results in better data overall.
         </p>
-        <img class="inlineImage" src="img/incidents/outcomes-neb.png" alt="neb product launch">
+        <img src="img/incidents/outcomes-neb.png" alt="neb product launch">
       </div>
       <div class="block40">
         <h2 id="tedx">TEDx Calgary</h2>
         <p>
           We were also given the incredible opportunity to showcase the visualization at 2017 TEDx Calgary. The visualization was part of the Interactions exhibit and we had the chance to directly engage members of the public. It resulted in lots of good discussion around how the visualization can help people form their own opinions rather than through media’s bias perspective. We were suggested deeper exploration into incidents, but this showed that our goal of encouraging public dialogue through visualizations was definitely on the right track.
         </p>
-        <img class="inlineImage" src="img/incidents/outcomes-tedx.png" alt="tedx demo">
+        <img class="marginBot-2" src="img/incidents/outcomes-tedx.png" alt="tedx demo">
         <p>
           This visualization was also part of an ongoing academic research engagement on open data visualization with <a href="https://dl.acm.org/citation.cfm?doid=3170427.3186539">publications</a> at prestigious HCI conferences.
         </p>
@@ -418,7 +418,7 @@
 
   <!-- footer -->
   <footer>
-    <p class="rightText">&copy;2019 designed and coded by peter buk</p>
+    <p>&copy;2019 designed and coded by peter buk</p>
   </footer>
 
 
