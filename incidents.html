@@ -89,7 +89,7 @@
           <p>Pipeline Incidents is an interactive data visualization featuring open data from National Energy Board-regulated pipelines. It is customizable to allow for both broad and targeted explorations into the dataset. The visualization is available online <a href="https://apps2.neb-one.gc.ca/pipeline-incidents/">here</a>.</p>
         </div>
 
-        <div id="roleBlock">
+        <div id="leftBlock">
           <h4>role</h4>
           <p>
             Data Visualization Designer<br>
@@ -98,14 +98,10 @@
           </p>
           <h4>timeline</h4>
           <p>
-            8 months (2017/04 - 2017/12)
+            8 months<br>(2017/04 - 2017/12)
           </p>
         </div>
         
-        <!-- <div id="timelineBlock">
-          
-        </div> -->
-
         <div id="methodsBlock">
           <h4>methods</h4>
           <p>
@@ -116,18 +112,7 @@
             Style Guides
           </p>
         </div>
-
-        <!-- <div id="toolsBlock">
-          <h4>tools</h4>
-          <p>
-            Tableau<br>
-            Adobe Illustrator<br>
-            Adobe InDesign<br>
-            Invision
-          </p>
-        </div> -->
-      </div>
-      
+      </div><!-- end overview block -->
     </section>
 
 
@@ -139,9 +124,9 @@
       </div>
       <div class="block40 marginBot-5">
         <p>
-          This visualization was part of the <a href="http://ilab.cpsc.ucalgary.ca/energyvis/">Energy Visualization Project</a>: a multi-year collaboration between Canada’s National Energy Board (NEB) and the University of Calgary’s Interactions Lab where I had the role of Data Visualization Designer.
+          The NEB has a vast amount of data open to the public, but much of it is only understood by data scientists with domain knowledge. The <a href="http://ilab.cpsc.ucalgary.ca/energyvis/">Energy Visualization Project</a> is a multi-year initiative to make Canada's energy data publicly accessible, transparent, and understandable.
           <br><br>
-          The NEB has a vast amount of data open to the public, but much of it is in cryptic spreadsheets only comprehensible by data scientists. We wanted to make this data not just open, but accessible through visualization. The goal of the project was to design a platform where anyone can explore and share interesting data stories, creating a starting point for engagement between the NEB and the general public.
+          This was a collaboration project between Canada’s National Energy Board (NEB) and the University of Calgary’s Interactions Lab where I worked as a Data Visualization Designer. Our goal was to design a platform where anyone can explore and share interesting data stories, creating a starting point for engagement between the NEB and the general public.
           <br><br>
           The Pipeline Incidents dataset in particular was a challenging one featuring over 1000 recorded incidents with 100+ pieces of data for any given incident. Our task was to design a novel interactive visualization that can explore this dataset and uncover the stories hidden within.
         </p>
@@ -158,7 +143,7 @@
 
       <div class="block40 marginBot-2">
         <p>
-          Pipeline Incidents is an interactive data visualization based on a <a href="https://www.juiceanalytics.com/writing/writing/parallel-coordinates">parallel coordinates plot</a>. In this type of visualization, data dimensions are divided into columns with lines flowing between them. The aggregate of these lines form a broad view of how the data is distributed.
+          This interactive data visualization is based on a <a href="https://www.juiceanalytics.com/writing/writing/parallel-coordinates">parallel coordinates plot</a>. In this type of visualization, data dimensions are divided into columns with lines flowing between them. The aggregate of these lines form a broad view of how the data is distributed.
         </p>
       </div>
 
@@ -178,7 +163,7 @@
       <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
         <div class="halfBlock">
           <p>
-            Clicking on a category such as Alberta shows all related incidents in a list on the side. From here, individual incidents can be selected to see its distribution across the columns.
+            Clicking on a category such as "Alberta" shows all related incidents in a list on the side. From here, individual incidents can be selected to see its distribution across the columns.
           </p>
         </div>
         <div class="halfBlock">
@@ -200,8 +185,7 @@
       <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
         <div class="halfBlock">
           <p>
-            Categories can also be filtered to view only relevant incidents. This is helpful for focusing an exploration into
-            specific categories.
+            A filter can be applied so that only incidents related to specific categories are shown. This is helpful for focusing on areas of interest.
             <br><br>
             Here, we see incidents only from Transcanada Keystone Pipeline GP. We can filter down further into just 2015 incidents if we wanted.
           </p>
@@ -213,11 +197,10 @@
 
       <div class="block40 marginBot-5">
         <p>
-          The key point of the design is that it is not just one visualization, but a whole system of visualizations based on the selected columns and filters. It provides a big picture view of the dataset while allowing for focused dives into areas of interest.
+          The key point of the design is that it is not just one visualization, but a whole system of visualizations based on the selected columns and filters. It provides a big picture of the dataset while allowing for focused dives into areas of interest.
         </p>
       </div>
-
-    </section>
+    </section> <!-- end solution section -->
 
 
     <!-- process section -->
@@ -231,9 +214,7 @@
       <div class="block40 marginBot-5">
         <h2 id="workshop">Stakeholder Workshops</h2>
         <p>
-          The project kicked off with stakeholder workshops involving clients as well as data experts from the NEB. It was a chance for us to get to know each other’s role in the project better as well as create mutual understanding for the goals this visualization should cover.
-          <br><br>
-          These data-driven workshops encouraged cross-functional collaboration and produced many insightful conversations. We learned about stories hidden in the data that wouldn’t have been clear without the background context from experts that have been working with this data for decades.
+          The project kicked off with stakeholder workshops involving clients and experts from the NEB that have worked with this data for decades. These workshops encouraged cross-functional collaboration and resulted with insightful data stories that we wouldn't have been able to find otherwise. It was also a chance to create mutual understanding for the goals this visualization should achieve.
         </p>
         <img src="img/incidents/process-workshop-data.png" alt="data workshop">
       </div>
@@ -253,18 +234,19 @@
       <div class="block40 marginBot-5">
         <h2 id="ideation">Ideation</h2>
         <p>
-          Working with a dataset as rich as this one, there were countless directions we could have taken, so we spent a considerable amount of time brainstorming ideas through individual sketching as well as group workshops.
+          Working with a dataset as rich as this one, there were countless directions we could have taken, so we spent a considerable amount of time brainstorming ideas through individual sketches as well as group workshops.
         </p>
         <figure class="marginBot-2">
           <img class="" src="img/incidents/process-ideation-sketch-wall.png" alt="sketch wall">
           <figcaption>This wall in our <i>war room</i> shows how much time we dedicated to ideation.</figcaption>
         </figure>
         <p>
-          The direction I focused on was location and time based data, as these are familiar concepts that provide grounding from a layperson’s perspective. I combined the two to create a map and timeline based interface that had controls to browse and filter specific incidents. In love with my idea, I set out to create a high-fidelity mockup.
-          <br><br>
-          However, we decided the narrow focus on map-driven interaction limited the exploration scope of the dataset too much. I learned a valuable lesson here on the benefits of quickly iterating with lower fidelity mockups instead of wasting time polishing higher fidelity mockups that end up going in the wrong direction.
+          I focused my ideas around location and time based data, as these are familiar concepts that provide grounding from a layperson’s perspective. By combining the two, I created a map and timeline based interface that had controls to browse and filter specific incidents. With the idea fixated in my mind, I set out to create a high-fidelity mockup.
         </p>
         <img class="marginBot-2 imgBorder" src="img/incidents/process-ideation-map.png" alt="map mockup">
+        <p>
+          However, we decided the narrow focus on map-driven interaction limited the exploration scope of the dataset too much. I learned a valuable lesson here on the benefits of quickly iterating with lower fidelity mockups instead of wasting time polishing higher fidelity mockups that may end up going in the wrong direction.
+        </p>
         <p>
           Ultimately, we decided on a parallel coordinates concept that a team member drafted up. This design was able to express various aspects of the data simultaneously, allowing users to see broad overviews as well as deeper exploration into individual categories of interest.
         </p>
@@ -291,7 +273,7 @@
       </div>
       <div class="block40 marginBot-5">
         <p>
-          The color palette was meticulously chosen as it had to cover 14 columns with varying shades as well as satisfy strict client criteria while still looking cohesive.
+          The color palette was meticulously chosen as it had to cover 14 columns with varying shades. It also had to satisfy strict client criteria while still looking visually cohesive.
         </p>
       </div>
 
@@ -301,7 +283,7 @@
         <p>
           One of the most challenging aspects of the visualization was the Interaction Design. We had to differentiate between selecting a category (ex. all Alberta incidents) vs selecting an individual incident (ex. A specific fire incident in CHEECHAM, Alberta on Nov 1, 2012). 
           <br><br>
-          Initially we handled this by a complicated set of click/hover interactions on the bars. There was also a separate click and hold interaction to summon the filter bo. Clearly there were too many interactions stack on top of the bars and it was not intuitive at all. Something had to be done.
+          Initially we handled this by a complicated set of click/hover interactions on the bars. There was also a separate click and hold interaction to activate a filter box. Clearly there were too many interactions stack on top of the bars and it was not intuitive at all. Something had to be done.
         </p>
         <figure class="marginBot-2">
           <img src="img/incidents/process-interaction-table.png" alt="table of interaction">
@@ -335,9 +317,9 @@
       </div>
       <div class="block40 marginBot-5">
         <p>
-          An important lesson we learned in this phase was how much insight even a tiny bit of testing can provide. Even though we were not able to go out and do more formal user testing, we were still able to validate our ideas through rudimentary prototyping and feedback with lab members. It is very easy to fall into the trap of thinking our interaction flows made sense but users rarely have the same mindset as the designer.
+          An important lesson we learned in this phase was how much insight even a tiny bit of testing can provide. Even though we could not go out and do more formal user testing, being able to validate our ideas through rudimentary prototyping and feedback with lab members was valuable to not fall into the trap of thinking everything made sense to the users.
           <br><br>
-          We also realized that current prototyping tools are not well suited for data visualization design. Tools like Invision are great for testing interaction between static screens, but interactions on data-driven visualizations can potentially alter hundreds of elements that have to be manually manipulated between mockup screens. This makes it hard to actually properly test interactions without resorting to a low-fidelity implementation of the design.
+          We also realized that current prototyping tools are not well suited for data visualization design. Tools like Invision are great for testing interaction between static screens, but interactions on data-driven visualizations can potentially alter hundreds of elements that have to be manually manipulated between mockup screens. This makes it hard to properly test interactions without resorting to a low-fidelity implementation of the design.
         </p>
       </div>
 
@@ -347,7 +329,7 @@
         <p>
           As a deliverable to stakeholders and the development team, we put together multiple style guides that describe minute design details such as pixel dimensions, color hexcodes, typography, and interaction details. 
           <br><br>
-          Creating these compilations also helped keep our team align under common terminology and served as an internal reference point at different stages of the design. It was initially designed in Adobe InDesign, but soon moved onto a web based tool for easier updates.
+          Creating these compilations also helped keep our team aligned under common terminology and served as an internal reference point at different stages of the design. It was initially designed in Adobe InDesign, but soon moved onto a web based tool for easier updates.
           <br><br>
           The Style Guide itself was an ongoing process of iteration as we learned what works best and how to communicate details to teams of different disciplines.
         </p>
@@ -372,14 +354,14 @@
       <div class="block40 marginBot-5">
         <h2 id="launch">Product Launch</h2>
         <p>
-          After the first version of the visualization was launched, we had the chance to show it off at NEB headquarters to an assortment of stakeholders from data analysts who work regularly with the data, to engineers working in the field. The visualization created a positive feedback loop where it gave institutions a new lens on their data practice, which results in better data overall.
+          After the first version of the visualization was launched, we had the chance to show it off at NEB headquarters to an assortment of stakeholders from data analysts who work regularly with the data to engineers working in the field. The visualization created a positive feedback loop where it gave institutions a new lens on their data practice, which results in better data overall.
         </p>
         <img src="img/incidents/outcomes-neb.png" alt="neb product launch">
       </div>
       <div class="block40">
         <h2 id="tedx">TEDx Calgary</h2>
         <p>
-          We were also given the incredible opportunity to showcase the visualization at 2017 TEDx Calgary. The visualization was part of the Interactions exhibit and we had the chance to directly engage members of the public. It resulted in lots of good discussion around how the visualization can help people form their own opinions rather than through media’s bias perspective. We were suggested deeper exploration into incidents, but this showed that our goal of encouraging public dialogue through visualizations was definitely on the right track.
+          We were also given the incredible opportunity to showcase the visualization at 2017 TEDx Calgary. The visualization was part of the Interactions exhibit and we had the chance to directly engage members of the public. It resulted in lots of good conversation around how the visualization can help people form their own opinions around pipeline discussions. We were suggested deeper exploration into incidents, but this showed that our goal of encouraging public dialogue throusgh visualizations was definitely on the right track.
         </p>
         <img class="marginBot-2" src="img/incidents/outcomes-tedx.png" alt="tedx demo">
         <p>
