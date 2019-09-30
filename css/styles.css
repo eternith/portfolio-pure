@@ -638,6 +638,10 @@ figure img {
     margin: 0 auto 2rem;
   }
 
+  .front-hero {
+    padding: 6rem 0;
+  }
+
   header {
     flex-direction: column;
     margin: 2rem auto;
