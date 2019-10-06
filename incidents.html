@@ -19,12 +19,12 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
-
+<body id="top">
+  
   <progress id="progressBarOrange" value="0"></progress>
 
   <div id="outlineBlock" class="orange-lite">
-    <p class="outlineLabel">JUMP TO</p>
+    <a href="#top"><p class="outlineLabel">JUMP TO <span>&#8593;</span></p></a>
     <ul>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#problem">Problem</a></li>
@@ -93,6 +93,7 @@
           <h4>role</h4>
           <p>
             Data Visualization Designer<br>
+            (Team Project)
             <!-- Interaction Designer<br> -->
             <!-- HCI Researcher -->
           </p>
@@ -126,7 +127,7 @@
         <p>
           The NEB has a vast amount of data open to the public, but much of it is only understood by data scientists with domain knowledge. The <a href="http://ilab.cpsc.ucalgary.ca/energyvis/">Energy Visualization Project</a> is a multi-year initiative to make Canada's energy data publicly accessible, transparent, and understandable.
           <br><br>
-          This was a collaboration project between Canada’s National Energy Board (NEB) and the University of Calgary’s Interactions Lab where I worked as a Data Visualization Designer. Our goal was to design a platform where anyone can explore and share interesting data stories, creating a starting point for engagement between the NEB and the general public.
+          This project was a collaboration between Canada’s National Energy Board (NEB) and the University of Calgary’s Interactions Lab where I worked as a Data Visualization Designer. Our goal was to design a platform where anyone can explore and share interesting data stories, creating a starting point for engagement between the NEB and the general public.
           <br><br>
           The Pipeline Incidents dataset in particular was a challenging one featuring over 1000 recorded incidents with 100+ pieces of data for any given incident. Our task was to design a novel interactive visualization that can explore this dataset and uncover the stories hidden within.
         </p>
@@ -147,8 +148,9 @@
         </p>
       </div>
 
-      <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
+      <div class="block60 flexWrapper flexHorizontalCenter marginBot-5">
         <div class="halfBlock">
+          <h5>Key Data Columns</h5>
           <p>
             This visualization features 14 columns, each representing a key aspect of the data such as Region, Company, or Incident Type. The columns are then further broken into Categories. 
             <br><br>
@@ -160,19 +162,21 @@
         </div>
       </div>
 
-      <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
+      <div class="block60 flexWrapper flexHorizontalCenter marginBot-5">
         <div class="halfBlock">
+          <h5>Category Selection</h5>
           <p>
-            Clicking on a category such as "Alberta" shows all related incidents in a list on the side. From here, individual incidents can be selected to see its distribution across the columns.
+            Clicking on a category such as "Alberta" shows all related incidents in a list on the left. From here, individual incidents can be selected to see its distribution across the columns.
           </p>
         </div>
         <div class="halfBlock">
           <img class="imgBorder" src="img/incidents/solution-2.png" alt="incident list">
         </div>
       </div>
-
-      <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
+      
+      <div class="block60 flexWrapper flexHorizontalCenter marginBot-5">
         <div class="halfBlock">
+          <h5>Sidebar</h5>
           <p>
             The columns currently not shown can be found in the sidebar where they can be dragged into the main view.
           </p>
@@ -182,8 +186,9 @@
         </div>
       </div>
 
-      <div class="block60 flexWrapper flexHorizontalCenter marginBot-2">
+      <div class="block60 flexWrapper flexHorizontalCenter marginBot-5">
         <div class="halfBlock">
+          <h5>Filters</h5>
           <p>
             A filter can be applied so that only incidents related to specific categories are shown. This is helpful for focusing on areas of interest.
             <br><br>
@@ -197,7 +202,7 @@
 
       <div class="block40 marginBot-5">
         <p>
-          The key point of the design is that it is not just one visualization, but a whole system of visualizations based on the selected columns and filters. It provides a big picture of the dataset while allowing for focused dives into areas of interest.
+          The key focus of this design is not to provide just one visualization, but a whole visualization system through careful selection of columns and filters. This way, it can provide a big picture of the dataset while also allowing for focused dives into specific topics.
         </p>
       </div>
     </section> <!-- end solution section -->
@@ -223,9 +228,9 @@
       <div class="block40 marginBot-5">
         <h2 id="data-analysis">Data Analysis</h2>
         <p>
-          With the new insight in mind, we went back and did a deep dive into the dataset with tools such as Tableau, spreadsheets, and scripts. This analysis process involved manipulating the data in different ways to uncover interesting trends and angles to approach the dataset.
+          With new insight in mind, we went back and did a deep dive into the dataset with tools such as Tableau, spreadsheets, and scripts. This analysis process involved manipulating the data in different ways to uncover interesting trends and angles to approach the dataset.
           <br><br>
-          The result of this analysis was to gain familiarity with the data characteristics to be used in the design phase as we brainstorm how to visually represent the data. The goal of designing a data visualization is not to present one static view, but create a system that viewers can use to discover and explore the data for themselves.
+          The result is gaining familiarity with the characteristics of the data which will inform our design phase where we brainstorm ways of visually representing the dataset. The goal of data visualization design is not to create one static view, but a system where viewers can discover and explore the data for themselves.
         </p>
         <img class="imgBorder" src="img/incidents/process-dataAnalysis.png" alt="data workshop">
       </div>

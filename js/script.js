@@ -31,13 +31,11 @@ var updateProgressBar = function() {
   progressBar.attr("value", value);
 
   // show/hide outlineBlock after below certain pixels
-  if ($(window).width() > 992) {
-    if (value > 750 ) {
-      $("#outlineBlock").fadeIn();
-    }
-    else {
-      $("#outlineBlock").fadeOut();
-    }
+  if (($(window).width()) > 992 && (value > 750)) {
+    $("#outlineBlock").fadeIn();
+  }
+  else {
+    $("#outlineBlock").fadeOut();
   }
 };
 $(document).on("scroll", updateProgressBar);

@@ -19,12 +19,12 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
 
   <progress id="progressBarBlue" value="0"></progress>
 
   <div id="outlineBlock" class="blue-lite">
-    <p class="outlineLabel">JUMP TO</p>
+    <a href="#top"><p class="outlineLabel">JUMP TO <span>&#8593;</span></p></a>
     <ul>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#problem">Problem</a></li>
@@ -138,20 +138,26 @@
         <h1>CREAT – an ideation management tool</h1>
       </div>
 
-      <div class="block40 flexWrapperKeep flexHorizontalCenter marginBot-2">
+      <div class="block40 marginBot-5">
+        <p>            
+          CREAT is a tool to help manage and digitize the various artifacts generated in the ideation process. By digitizing ideas, they can be shared across the team to cultivate new ideas instead of staying hidden in one person’s notebook.
+        </p>
+      </div>
+
+      <div class="block40 flexWrapper flexHorizontalCenter marginBot-5">
         <div class="halfBlock">
+          <h5>Organizing artifacts</h5>
           <p>
-            CREAT is a tool to help digitize the various ideation artifacts generated across activity sessions and team members. By digitizing ideas, they can be shared across the team to cultivate new ideas instead of staying hidden in one person’s notebook.
-            <br><br>
-            Artifacts can be grouped and displayed in different views to suit different working styles.
+            Artifacts can be organized by sessions or in custom groups to suit the team's working style. Both grid and list views are available.
           </p>
         </div>
-        <div class="halfBlock">
+        <div class="halfBlock tallImage">
           <img src="img/creat/solution-view.gif" alt="CREAT switching views">
         </div>
       </div>
 
-      <div class="block40 marginBot-2">
+      <div class="block40 marginBot-5">
+        <h5>Digitization</h5>
         <p>
           Digitizing physical artifacts is as easy as taking a photo. The image is then converted with OCR to a digital format
           that can be manipulated. The original analog version can also be toggled back in case any details go missing.
@@ -166,14 +172,15 @@
         </div>
       </div>
 
-      <div class="block40 flexWrapperKeep flexHorizontalCenter">
+      <div class="block40 flexWrapper flexHorizontalCenter">
         <div class="halfBlock">
-          <img src="img/creat/solution-cards.gif" alt="CREAT card annotations">
-        </div>
-        <div class="halfBlock">
+          <h5>Documentation</h5>
           <p>
             Annotations and comments can also be added to help capture the thinking process. This documentation helps ideas and artifacts live on their own without requiring a designer to walk through their thinking process.
           </p>
+        </div>
+        <div class="halfBlock tallImage" >
+          <img src="img/creat/solution-cards.gif" alt="CREAT card annotations">
         </div>
       </div>
     </section>
@@ -371,7 +378,11 @@
       nested: true,
       nestedClass: 'active-parent'
     });
-    var scroll = new SmoothScroll('a[href*="#"]');
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true,
+      easing: "easeOutQuad"
+    });
   </script>
   <script src="js/script.js"></script>
 </body>
