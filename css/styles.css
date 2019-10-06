@@ -18,6 +18,9 @@
   font-family: "Effra"; font-weight: 300; src: url("../font/Effra-Light.otf");
 }
 @font-face {
+  font-family: "Effra"; font-weight: 400; src: url("../font/Effra-Regular.otf");
+}
+@font-face {
   font-family: "Effra"; font-weight: 500; src: url("../font/Effra-Medium.otf");
 }
 
@@ -262,7 +265,7 @@ section:last-child { /* no margin on last child of any section children */
 	Typography
 **************/
 
-h1, h2 {
+h1, h2, h5 {
   font-family: "Effra", sans-serif;
   font-weight: 500;
 }
@@ -291,6 +294,11 @@ h4 {
   margin: 1rem 0 0;
 }
 
+h5 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
 p {
   line-height: 1.8rem;
   font-size: 1rem;
@@ -301,7 +309,7 @@ p {
 a {
   color: #595959;
 }
-ul li a, .nextProject div a {
+ul li a, .nextProject div a, #outlineBlock a {
   text-decoration: none;
 }
 
@@ -421,6 +429,9 @@ figcaption {
   font-size: 0.8rem;
   margin-bottom: 0.4rem;
 }
+.outlineLabel span {
+  font-size: 1rem;
+}
 
 
 .nextProject {
@@ -453,7 +464,7 @@ progress {
   left: 0;
   top: 0;
   width: 100%;
-  height: 5px;
+  height: 8px;
 
   -webkit-appearance: none;
 	-moz-appearance: none;
@@ -701,6 +712,10 @@ figure img {
   }
   .imageDuo img, .imageTrio img {
     margin-bottom: 1rem;
+  }
+
+  .tallImage {
+    width: 45vw;
   }
 
   .leftText {
