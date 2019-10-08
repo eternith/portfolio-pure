@@ -1,18 +1,55 @@
+var spy = new Gumshoe('#outlineBlock a', {
+  nested: true,
+  nestedClass: 'active-parent'
+});
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 500,
+  speedAsDuration: true,
+  easing: "easeOutQuad"
+});
+
+
+
 /* 
   Reading indicator
   https://css-tricks.com/reading-position-indicator/
 */
-
 var progressBar = $("progress");
 var max, value;
 
 // set initial max value on document ready, but may not be correct due to images loading
 $(document).ready(function () {
-  console.log("ready docHeight = " + $(document).height());
+  // console.log("ready docHeight = " + $(document).height());
 
   // set max value of progress bar
   max = $(document).height() - $(window).height();
   progressBar.attr("max", max);
+
+
+  // Magnific Popup
+  // https://dimsemenov.com/plugins/magnific-popup/
+  $('.image-link').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-with-zoom',
+    zoom: {
+      enabled: true,
+      easing: 'ease-in-out',
+      duration: 200
+    }
+  });
+  $('.imageTrio, .imageDuo').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-with-zoom',
+    zoom: {
+      enabled: true,
+      easing: 'ease-in-out',
+      duration: 200
+    }
+  });
 });
 
 // get true max value once all images are loaded

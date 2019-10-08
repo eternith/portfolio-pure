@@ -160,14 +160,14 @@ section:last-child { /* no margin on last child of any section children */
 /* FLEX double column blocks */
 .flexWrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .flexWrapperKeep { /* Don't convert to columns in responsive */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .halfBlock {
-  width: 48%;
+  width: 47%;
   display: inline-block;
 }
 .flexVerticalCenter {
@@ -292,8 +292,8 @@ h3 {
 
 h4 {
   font-weight: 700;
-  font-size: 1rem;
-  margin: 1rem 0 0;
+  font-size: 1.1rem;
+  margin: 1rem 0 0.2rem;
 }
 
 h5 {
@@ -480,7 +480,7 @@ progress {
      -o-transition : all 0.1s ease-in-out;
         transition : all 0.1s ease-in-out;
 
-  z-index: 10;
+  z-index: 100;
 }
 progress::-webkit-progress-bar {
 	background-color: transparent;
@@ -501,11 +501,13 @@ progress::-webkit-progress-bar {
 
   font-family: "Effra", sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2rem;
+  color: #767676;
 }
 .insightList li {
   margin-bottom: 2rem;
+  padding-left: 0.5rem;
 }
 .insightList li:last-child {
   margin-bottom: 0;
@@ -612,6 +614,30 @@ figure img {
 #creatLogo {
   width: 12rem;
 }
+
+/* magnific popup zoom bg overlay fade */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
 
 /**************
 	RESPONSIVE
