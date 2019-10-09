@@ -172,7 +172,7 @@ section:last-child { /* no margin on last child of any section children */
 }
 .flexVerticalCenter {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 .flexHorizontalCenter {
   align-items: center;

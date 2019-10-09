@@ -76,7 +76,7 @@
           <h3 class="heroType">Data Visualization Design</h3>
         </div>
         <div class="heroRightWide">
-          <img src="img/incidents/hero-browserMockup.png" alt="pipeline incidents browser mockup">
+          <img src="img/incidents/hero-browserMockup2.png" alt="pipeline incidents browser mockup">
         </div>
       </div>
 
@@ -118,11 +118,11 @@
     <section id="problem" class="marginBot-5">
       <div class="sectionBlock orange marginBot-5">
         <h3>PROBLEM</h3>
-        <h1>Making open data accessible</h1>
+        <h1>Open data is not accessible data</h1>
       </div>
       <div class="block40 marginBot-5">
         <p>
-          The NEB has a vast amount of data open to the public, but much of it is only understood by data scientists with domain knowledge. The <a href="http://ilab.cpsc.ucalgary.ca/energyvis/">Energy Visualization Project</a> is a multi-year initiative to make Canada's energy data publicly accessible, transparent, and understandable.
+          There is an increasing trend for data being opened up to public access, but much of this data is very complex and unwieldy, only useful for data scientists with domain knowledge. The <a href="http://ilab.cpsc.ucalgary.ca/energyvis/">Energy Visualization Project</a> is a multi-year initiative to make Canada's open energy data publicly accessible, transparent, and understandable.
           <br><br>
           This project was a collaboration between Canada’s National Energy Board (NEB) and the University of Calgary’s Interactions Lab where I worked as a Data Visualization Designer. Our goal was to design a platform where anyone can explore and share interesting data stories, creating a starting point for engagement between the NEB and the general public.
           <br><br>
@@ -163,7 +163,7 @@
         <div class="halfBlock">
           <h5>Category Selection</h5>
           <p>
-            Clicking on a category such as "Alberta" shows all related incidents in a list on the left. From here, individual incidents can be selected to see its distribution across the columns.
+            Clicking on a category such as "Alberta" shows all related incidents in a list on the left. From here, individual incidents can be selected to see its distribution line across the columns.
           </p>
         </div>
         <div class="halfBlock">
@@ -227,16 +227,19 @@
         <p>
           With new insight in mind, we went back and did a deep dive into the dataset with tools such as Tableau, spreadsheets, and scripts. This analysis process involved manipulating the data in different ways to uncover interesting trends and angles to approach the dataset.
           <br><br>
-          The result is gaining familiarity with the characteristics of the data which will inform our design phase where we brainstorm ways of visually representing the dataset. The goal of data visualization design is not to create one static view, but a system where viewers can discover and explore the data for themselves.
+          The result is gaining familiarity with the characteristics of the data such as its distribution, extremities, and dependencies. We use this to inform our design phase where we brainstorm ways of visually representing the dataset. The goal of data visualization design is not to create one static view, but a system where viewers can discover and explore the data for themselves.
         </p>
-        <a href="img/incidents/process-dataAnalysis.png" class="image-link"><img class="imgBorder" src="img/incidents/process-dataAnalysis.png" alt="data workshop"></a>
+        <figure>
+          <a href="img/incidents/process-dataAnalysis.png" class="image-link"><img class="imgBorder" src="img/incidents/process-dataAnalysis.png" alt="data workshop"></a>
+          <figcaption>Tableau is a very powerful tool for quickly comparing dimensions and playing with the data</figcaption>
+        </figure>
       </div>
 
       <!-- ideation subsection -->
       <div class="block40 marginBot-5">
         <h2 id="ideation">Ideation</h2>
         <p>
-          Working with a dataset as rich as this one, there were countless directions we could have taken, so we spent a considerable amount of time brainstorming ideas through individual sketches as well as group workshops.
+          There were countless directions we could have taken with a dataset as rich as this one, so we spent a considerable amount of time brainstorming ideas through individual sketches as well as group workshops.
         </p>
         <figure class="marginBot-2">
           <a href="img/incidents/process-ideation-sketch-wall.png" class="image-link"><img class="" src="img/incidents/process-ideation-sketch-wall.png" alt="sketch wall"></a>
@@ -247,7 +250,7 @@
         </p>
         <a href="img/incidents/process-ideation-map.png" class="image-link"><img class="marginBot-2 imgBorder" src="img/incidents/process-ideation-map.png" alt="map mockup"></a>
         <p>
-          However, we decided the narrow focus on map-driven interaction limited the exploration scope of the dataset too much. I learned a valuable lesson here on the benefits of quickly iterating with lower fidelity mockups instead of wasting time polishing higher fidelity mockups that may end up going in the wrong direction.
+          However, we decided the narrow focus in map-driven interaction limited the exploration scope of the dataset too much. I learned a valuable lesson here on the benefits of quickly iterating with lower fidelity mockups instead of wasting time polishing higher fidelity mockups that may end up going in the wrong direction.
         </p>
         <p>
           Ultimately, we decided on a parallel coordinates concept that a team member drafted up. This design was able to express various aspects of the data simultaneously, allowing users to see broad overviews as well as deeper exploration into individual categories of interest.
@@ -259,7 +262,7 @@
       <div class="block40 marginBot-2">
         <h2 id="iteration">Visual Design Iteration</h2>
         <p>
-          Now that we have a visualization concept in mind, we expanded again to explore the visual design and how to exactly map out the data into visual elements. Rather than abandoning my timeline+map idea, we found a way to incorporate elements of it into this design. The timeline naturally fits as a column while the map can be represented as a wide column with connecting lines pointing to the rough location of the incident.
+          Now that we have a visualization concept in mind, we expanded again to explore the visual design and how to map the data into visual elements. Rather than abandoning my timeline+map idea, we found a way to incorporate elements of it into this design. The timeline naturally fits as a column while the map can be represented as a wide column with connecting lines pointing to the rough location of the incident.
         </p>
         <div class="imageDuo">
           <a href="img/incidents/process-iteration-1.png"><img class="imgBorder" src="img/incidents/process-iteration-1.png" alt="visual iteration 1"></a>
@@ -267,7 +270,7 @@
         </div>
         <figcaption class="marginBot-2">Variations on the placement of category columns. The selection sidebar list or expansion boxes had poor visual indicators and didn't make the cut.</figcaption>
         <p>
-          After many rounds of iteration and feedback, we settled on a collapsed sidebar with staggered, cascading bars. This was analogous to pulling a book off a shelf to add to the current view.
+          After many rounds of iteration and feedback, we settled on a design with a  collapsed sidebar with staggered, cascading bars. This was analogous to pulling a book off a shelf to add to the current view.
         </p>
       </div>
       <div class="block60 marginBot-2">
@@ -285,7 +288,7 @@
         <p>
           One of the most challenging aspects of the visualization was the Interaction Design. We had to differentiate between selecting a category (ex. all Alberta incidents) vs selecting an individual incident (ex. A specific fire incident in CHEECHAM, Alberta on Nov 1, 2012). 
           <br><br>
-          Initially we handled this by a complicated set of click/hover interactions on the bars. There was also a separate click and hold interaction to activate a filter box. Clearly there were too many interactions stack on top of the bars and it was not intuitive at all. Something had to be done.
+          Initially we handled this by a complicated set of click/hover interactions on the bars. There was also a separate click and hold interaction to activate a filter box. Clearly there were too many interactions stacked on top of the bars and it was not intuitive at all. Something had to be done.
         </p>
         <figure class="marginBot-2">
           <a href="img/incidents/process-interaction-table.png" class="image-link"><img src="img/incidents/process-interaction-table.png" alt="table of interaction"></a>
@@ -329,9 +332,9 @@
       <div class="block40">
         <h2 id=style-guide>Style Guide</h2>
         <p>
-          As a deliverable to stakeholders and the development team, we put together multiple style guides that describe minute design details such as pixel dimensions, color hexcodes, typography, and interaction details. 
+          As a deliverable to stakeholders and the development team, we put together multiple style guides that describe design details such as pixel dimensions, color hexcodes, typography, and interaction details. 
           <br><br>
-          Creating these compilations also helped keep our team aligned under common terminology and served as an internal reference point at different stages of the design. It was initially designed in Adobe InDesign, but soon moved onto a web based tool for easier updates.
+          Creating these guides also helped keep our team aligned under common terminology and served as an internal reference point at different stages of the design. It was initially designed in Adobe InDesign, but soon moved onto a web based tool for easier updates.
           <br><br>
           The Style Guide itself was an ongoing process of iteration as we learned what works best and how to communicate details to teams of different disciplines.
         </p>
@@ -363,22 +366,22 @@
       <div class="block40">
         <h2 id="tedx">TEDx Calgary</h2>
         <p>
-          We were also given the incredible opportunity to showcase the visualization at 2017 TEDx Calgary. The visualization was part of the Interactions exhibit and we had the chance to directly engage members of the public. It resulted in lots of good conversation around how the visualization can help people form their own opinions around pipeline discussions. We were suggested deeper exploration into incidents, but this showed that our goal of encouraging public dialogue throusgh visualizations was definitely on the right track.
+          We were also given the incredible opportunity to showcase the visualization at 2017 TEDx Calgary. The visualization was part of the Interactions exhibit and we had the chance to directly engage members of the public. It resulted in lots of good conversation around how the visualization can help people form their own opinions around pipeline discussions. Some people wanted to explore deeper into the incidents than the data provided, but this showed that our goal of encouraging public dialogue through visualizations was definitely on the right track.
         </p>
         <a href="img/incidents/outcomes-tedx.png" class="image-link"><img class="marginBot-2" src="img/incidents/outcomes-tedx.png" alt="tedx demo"></a>
         <p>
-          This visualization was also part of an ongoing academic research engagement on open data visualization with <a href="https://dl.acm.org/citation.cfm?doid=3170427.3186539">publications</a> at prestigious HCI conferences.
+          This visualization was also part of an ongoing academic research engagement on open data visualization with <a href="https://dl.acm.org/citation.cfm?doid=3170427.3186539">publications</a> at HCI conferences such as CHI.
         </p>
       </div>
 
       <div class="block40">
         <h2 id="lessons">Personal Lessons</h2>
         <p>
-          Working on this project from exploration phase to final implementation taught me a lot of valuable lessons in cross-functional communication as well as the challenges of data visualization design.
+          Working on this project from the exploration phase to final implementation taught me a lot of valuable lessons in cross-functional communication as well as the challenges of data visualization design.
           <br><br>
-          Good communication between stakeholders and developers were key to the success of the project. As the teams were separated with different domain knowledge, we had to learn how to best communicate our design intentions to match stakeholder goals as well as developer constraints.
+          Good communication between stakeholders and developers were key to the success of the project. As the teams were remotely separated with differing domain knowledge, we had to learn how to best communicate our design intentions to meet stakeholder goals as well as developer constraints.
           <br><br>
-          As a designer, having the chance to work on data visualization exposed me to a different side of design very different from web or app design. While they share similar design fundamentals such as layout, typography, and basic elements, data visualization design involves a deep dive into the visual representation of data that introduces a host of new challenges to the design process. 
+          As a designer, having the chance to work on data visualization exposed me to a  side of design very different from web or app design. While they share similar design fundamentals such as layout, typography, and visual elements, data visualization design involves a deep dive into the visual representation of data that introduces a host of new challenges to the design process. 
           <br><br>
           Being able to work on this team was a great transition for me as I had the chance to combine the curiosity from my Human Computer Interaction research background with the intricacies of a client design project. 
         </p>
