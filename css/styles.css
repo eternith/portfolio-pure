@@ -128,16 +128,6 @@ section:last-child { /* no margin on last child of any section children */
   column-gap: 20px;
 }
 
-/* margin classes */
-.marginBot-2 {
-  margin-bottom: 2rem;
-}
-.marginBot-5 {
-  margin-bottom: 5rem;
-}
-.marginBot-8 {
-  margin-bottom: 8rem;
-}
 
 
 /* case study overview blocks */
@@ -191,13 +181,15 @@ section:last-child { /* no margin on last child of any section children */
 .hero {
   padding: 4rem 0;
 }
+.hero-wide { /* landscape hero images, so more space needed */
+  padding: 10rem 0;
+}
+
 .heroHalf {
   width: 50%;
 }
-
 .heroLeftWide {
-  width: 20%;
-  margin-right: 5%;
+  width: 25%;
   margin-left: 12.5%;
 }
 .heroRightWide {
@@ -209,6 +201,8 @@ section:last-child { /* no margin on last child of any section children */
   margin-bottom: 2rem;
   border-bottom: 1px solid #595959;
 }
+
+
 
 
 
@@ -238,9 +232,7 @@ section:last-child { /* no margin on last child of any section children */
 /**************
 	index.html
 **************/
-.front-hero {
-  padding: 10rem 0;
-}
+
 #hero-intro-header {
   font-size: 2.4rem;
   margin-bottom: 2.8rem;
@@ -325,7 +317,7 @@ figcaption {
 }
 
 
-.heroTagline, .heroType  {
+.heroTagline  {
   font-family: "Effra", sans-serif;
   font-weight: 300;
   font-size: 1.3rem;
@@ -333,8 +325,11 @@ figcaption {
   margin-bottom: 2rem;
 }
 .heroType {
-  font-style: italic;
-  font-size: 1.2rem;
+  font-family: "Effra", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
 }
 
 
@@ -607,13 +602,16 @@ figure img {
   margin-left: 0.4rem;
 }
 
+.heroLogo {
+  width: 12rem;
+}
+
 #creatHero {
   width: 80%;
   margin: auto;
 }
-#creatLogo {
-  width: 12rem;
-}
+
+
 
 /* magnific popup zoom bg overlay fade */
 .mfp-with-zoom .mfp-container,
@@ -638,6 +636,19 @@ figure img {
   opacity: 0;
 }
 
+
+
+
+/* margin classes */
+.marginBot-2 {
+  margin-bottom: 2rem;
+}
+.marginBot-5 {
+  margin-bottom: 5rem;
+}
+.marginBot-8 {
+  margin-bottom: 8rem;
+}
 
 
 /**************
@@ -678,7 +689,7 @@ figure img {
     margin: 0 auto 2rem;
   }
 
-  .front-hero {
+  .hero-wide {
     padding: 6rem 0;
   }
 
