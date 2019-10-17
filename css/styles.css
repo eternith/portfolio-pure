@@ -182,7 +182,7 @@ section:last-child { /* no margin on last child of any section children */
   padding: 4rem 0;
 }
 .hero-wide { /* landscape hero images, so more space needed */
-  padding: 10rem 0;
+  padding: 12rem 0;
 }
 
 .heroHalf {
@@ -537,7 +537,7 @@ header {
 }
 
 #logo {
-  width: 18rem;
+  width: 15rem;
 }
 
 
