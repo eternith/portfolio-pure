@@ -605,6 +605,9 @@ figure img {
 .heroLogo {
   width: 12rem;
 }
+#complyLogo {
+  width: 20rem;
+}
 
 #creatHero {
   width: 80%;
