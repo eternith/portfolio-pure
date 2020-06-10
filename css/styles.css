@@ -235,12 +235,12 @@ section:last-child { /* no margin on last child of any section children */
   font-size: 2.4rem;
   margin-bottom: 2.8rem;
 }
-#hero-intro-text {
+.hero-intro-text {
   width: 60%;
-  line-height: 2.4rem;
+  line-height: 2rem;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.6rem;
 }
 
 .subtext {
@@ -713,7 +713,7 @@ figure img {
     padding-right: 2rem;
   }
 
-  .left40, .right60, #hero-intro-text {
+  .left40, .right60, .hero-intro-text {
     width: 80vw;
     margin-bottom: 2rem;
   }
