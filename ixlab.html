@@ -24,21 +24,21 @@
     <a href="#top"><p class="outlineLabel">JUMP TO <span>&#8593;</span></p></a>
     <ul>
       <li><a href="#overview">Overview</a></li>
-      <li><a href="#problem">Problem</a></li>
-      <li><a href="#solution">Solution</a></li>
+      <li><a href="#challenge">Challenge</a></li>
       <li>
         <a href="#process">Process</a>
         <ul>
-          <li><a href="#exploration">Exploration</a></li>
-          <li><a href="#research">Research Insights</a></li>
-          <li><a href="#ideation">Ideation</a></li>
-          <li><a href="#paper">Paper Prototyping</a></li>
-          <li><a href="#wireframing">Wireframing</a></li>
-          <li><a href="#testing">Testing</a></li>
-          <li><a href="#final">Final Design</a></li>
+          <li><a href="#interviews">Stakeholder Interviews</a></li>
+          <li><a href="#competitive">Competitive Analysis</a></li>
+          <li><a href="#ia">Information Architecture</a></li>
+          <li><a href="#wireframes">Wireframes</a></li>
+          <li><a href="#branding">Branding</a></li>
+          <li><a href="#mockup">Mockup Iterations</a></li>
         </ul>
       </li>
-      <li><a href="#outcomes">Outcomes</a></li>
+      <li><a href="#dev">Development</a></li>
+      <li><a href="#solution">Solution</a></li>
+      <li><a href="#retrospect">In Retrospect</a></li>
     </ul>
   </div>
 
@@ -66,7 +66,7 @@
         <div class="heroLeftWide">
           <h3 class="heroType marginBot-2">Web Design</h3>
           <img id="ixlabLogo" class="marginBot-2" src="img/ixlab/ixlab.svg" alt="ixlab logo">
-          <h3 class="heroTagline marginBot-2">CMS website for the ixLab</h3>
+          <h3 class="heroTagline marginBot-2">Promoting research achievements</h3>
         </div>
         <div class="heroRightWide">
           <img src="img/ixlab/hero.png" alt="ixlab browser mockup">
@@ -76,7 +76,7 @@
       <div class="block40 overviewBlock">
         <div id="aboutBlock">
           <h4>about</h4>
-          <p>This is the website for a university research lab, designed to highlight their research and achievements. It was built from scratch using Craft CMS which allows for simple content management. You can visit the website <a href="https://ixlab.cs.sfu.ca/">here</a>.</p>
+          <p>We built a custom web solution for the ixLab to highlight their research and achievements. It was designed to make it easy for the site owners to publish content and news to the world. You can visit the website at <a href="https://ixlab.cs.sfu.ca/">https://ixlab.cs.sfu.ca</a>.</p>
         </div>
 
         <div id="leftBlock">
@@ -101,8 +101,8 @@
             Stakeholder Interviews<br>
             Competitive Analysis<br>
             Wireframes<br>
-            Mid Fidelity Mockups<br>
-            Craft CMS (HTML/CSS/PHP)<br>
+            Mid-fidelity Mockups<br>
+            Craft CMS (HTML/CSS/JS/PHP)<br>
             SASS<br>
             Git
           </p>
@@ -112,20 +112,20 @@
 
 
     <!-- problem section -->
-    <section id="problem" class="marginBot-5">
+    <section id="challenge" class="marginBot-5">
       <div class="sectionBlock blue marginBot-5">
         <h3>CHALLENGE</h3>
-        <h1>Creating a maintainable site</h1>
+        <h1>Crafting a maintainable site</h1>
       </div>
 
       <div class="block40">
         <p>
-          The Interactive Experiences Lab is a small but growing research group at Simon Fraser University. Occupied by renowned professors, talented students and award-winning research, they needed a web presence to match the precedence set by their work.
+          The Interactive Experiences Lab (ixLab) is a small but growing research group at Simon Fraser University. Occupied by renowned professors, talented students, and award-winning research, they needed a website that matched the precedent set by their work.
           <br><br>
-          Our challenge was to create a website that highlights the type of research conducted and promote the lab's achievements. It also had to be build on a platform that is easily maintainable without requiring access to the code or database.
-          <br><br>
-          I collaborated with another designer for this project and took part in every aspect of building the website from design to development.
+          The previous website was difficult to update and they did not have the resources to constantly manage it. <b>Our challenge was to build a web solution that allows the lab to easily maintain their online presence by promoting their research and achievements.</b>
         </p>
+        <h4>My Role</h4>
+        <p>I collaborated with another designer for this project and we both took part in every aspect of building the website, from design to development. I also set up the server configuration to deploy the website.</p>
       </div>
     </section>
 
@@ -134,16 +134,17 @@
     <section id="process" class="marginBot-5">
       <div class="sectionBlock blue marginBot-5">
         <h3>DESIGN PROCESS</h3>
-        <h1>All the way from discovery to development</h1>
+        <h1>Discovering insights in research</h1>
       </div>
 
       <div class="block40 marginBot-5">
         <h2 id="interviews">Stakeholder Interviews</h2>
         <p>
-          Before we could start ideating, we had to identify what the lab actually wanted in their new website. 
+          Before we could start ideating, we had to identify what the lab actually wanted in their new website. We also wanted to understand the issues with the previous solution and why it was not working for them.
           <br><br>
-          From a series of discussions, we discovered the goals of the website as well as important requirements.
+          The previous site had been built as a single-page application by a computer science student who was excited to deploy new web technologies, but did not account for the needs of the people who have to work with the website afterwards. The professors had busy schedules and constant student turnaround made it difficult to assign one person as the webmaster.
           <br><br>
+          From a series of discussions, we figured out the following goals and requirements for the website:
         </p>
         <h4 class="listHeader">Goals:</h4>
         <ul class="insightList marginBot-2">
@@ -155,17 +156,13 @@
         </ul>
         <h4 class="listHeader">Requirements:</h4>
         <ul class="insightList  marginBot-2">
-          <li>The lab consists of 2 professors and their respective groups should be visually separated yet appear cohesively together</li>
-          <li>One of the professors has many more years worth of work behind her which will have to be  balanced as to not dominate the website</li>
-          <li>The website should be easy to update with new content and can be onboarded to new students</li>
+          <li>The lab consists of 2 professors and their respective groups that needed to be visually separated yet appear cohesively together</li>
+          <li>One of the professors has many more years' worth of work behind her that will have to be curated to maintain balance</li>
+          <li>The website should be easy to update with new content and can be on-boarded to new members of the lab</li>
         </ul>
         <h4 class="listHeader">Insights</h4>
         <p>
-          The users of a website are not just the visitors, but also the people who have to manage it.
-          <br><br>
-          The previous website had been built as a single page application by a computer science student who was excited to deploy new web technologies, but did not account for the needs of the people who have to work with the website afterwards. The professors have busy schedules and constant student turnaround makes it difficult to assign one person as the webmaster. 
-          <br><br>
-          Our new website needs to create a good experience for the content managers too.
+          The users of a website are not just the visitors, but also the people who have to manage it. The new website needs to have a good workflow for the content managers too. By understand their goals and pain points, we can create a solution that addresses all of those needs. 
         </p>
       </div>
 
@@ -173,16 +170,14 @@
       <div class="block40 marginBot-5">
         <h2 id="competitive">Competitive Analysis</h2>
         <p>
-          We looked into other research labs to study the common navigation patterns and content hierarchy expected from this type of website. We categorized our research in Airtable and noted down any features that worked well to inform our own designs. 
+          We looked into other research labs to study the common navigation patterns and content hierarchy expected from this type of website. We categorized our research in Airtable and noted down any features that worked well to inform our own designs.
         </p>
         <a href="img/ixlab/process-competitive.png" class="image-link marginBot-2"><img src="img/ixlab/process-competitive.png" alt="competitive analysis of research websites"></a>
         <h4 class="listHeader">Insights</h4>
         <p>
-          Most sites seem to follow a similar navigation pattern. One place where they varied was the distinction between "Projects", "Publications", and "Research". 
+          Most of the sites followed a similar navigation pattern. One place where they varied was the distinction between <b>Projects</b>, <b>Publications</b>, and <b>Research</b>. Some labs considered <b>Research</b> as themes while others classified them as projects. We needed to clearly define which definitions made sense for us and our goals.
           <br><br>
-          Some labs consider "Research" as themes while others classify them as projects. We needed to clearly define which definition makes sense for us.
-          <br><br>
-          Computer Science Research websites in particular tend to have more outdated UI designs, with a focus on functionality over aesthetics. There is an opportunity to stand out by going against the norm.
+          Computer Science research websites in particular tend to have more outdated UI designs, with a focus on functionality over aesthetics. There is an opportunity to stand out by going against the norm.
         </p>
       </div>
 
@@ -190,7 +185,9 @@
       <div class="block40 marginBot-2">
         <h2 id="ia">Information Architecture</h2>
         <p>
-          Using our research, we arrived at this sitemap for our top level navigation. The client also wanted to feature highlights of specific entries on the homepage based on similar designs from other sites. 
+          Informed by our research, we arrived at this sitemap for our top-level navigation. The client also wanted to feature highlights of specific entries on the homepage based on similar designs from other sites. 
+          <br><br>
+          We decided to define <b>Research</b> as overarching projects that can span across multiple publications and students. This will help promote the type of research being conducted to interested students.
         </p>
       </div>
       <div class="block60 marginBot-5">
@@ -201,27 +198,27 @@
       <div class="block40 marginBot-2">
         <h2 id="wireframes">Wireframes</h2>
         <p>
-          Multiple wireframe mockups were built for each page and presented for feedback. We explored a range of ideas from conservative solutions to out of the box concepts. In the end, we decided to go with the more simple designs to reduce complexity.
+          Multiple wireframes were built for each page and presented for feedback. We explored a range of ideas from conservative solutions to out of the box concepts. In the end, we decided to go with more simple designs to reduce complexity.
         </p>
       </div>
-      <div class="block60 marginBot-2">
+      <div class="block100 marginBot-2">
         <figure class="marginBot-2">
           <a href="img/ixlab/process-wireframe1.png" class="image-link"><img src="img/ixlab/process-wireframe1.png" alt="wireframes 1"></a>
-          <figcaption>Many iterations for the Project page, which actually evolved into the Research page in the end.</figcaption>
+          <figcaption>The many iterations for the Project page, which actually evolved into the Research page as described above.</figcaption>
         </figure>
-        <figure class="marginBot-2">
+        <figure class="marginBot-5">
           <a href="img/ixlab/process-wireframe2.png" class="image-link"><img src="img/ixlab/process-wireframe2.png" alt="wireframes 2"></a>
           <figcaption>Final wireframes for most pages</figcaption>
         </figure>
       </div>
 
 
-      <div class="block40 marginBot-2">
+      <div class="block40 marginBot-5">
         <h2 id="branding">Branding</h2>
         <p>
-          Some keywords used to describe the desired mood included: engaging, inviting, simple, clean. From this, we focused on a minimal UI theme that did not get in the way of the content. 
+          Keywords used to describe the desired mood included: engaging, inviting, simple, clean. From this, we focused on a minimal UI theme that did not get in the way of the content. 
           <br><br>
-          We took the existing logo and made minor adjustments to it. The colour palette and typography were also designed with the logo in mind. The rounded <i>Nunito</i> made the site feel more inviting, and the sans-serif <i>Noto Sans</i> body font was clean and readable to show that serious research is being conducted.
+          We took the existing logo and made minor adjustments to it. The colour palette and typography were also designed with this logo in mind. The rounded <b>Nunito</b> makes the site feel more inviting, and the sans-serif <b>Noto Sans</b> body font is clean and readable to present the meaningful research being conducted.
         </p>
         <a href="img/ixlab/process-branding.png" class="image-link"><img src="img/ixlab/process-branding.png" alt="branding style tile"></a>
       </div>
@@ -229,11 +226,17 @@
       <div class="block40 marginBot-2">
         <h2 id="mockup">Mockup Iterations</h2>
         <p>
-          Some pages like the Home page went through multiple rounds of iterations and feedback until we arrived at something we are comfortable with. 
+          Some pages like the Home page went through multiple rounds of iterations and feedback until we arrived at something that fulfilled the goals of the website. 
           <br><br>
-          As we iterated on the design, some of the requirements changed as well. For example, we wanted the recruitment ad to be very prominent as a CTA originally. But after presenting a mockup with that, we were given feedback that it was too prominent and it became a pinned news item instead.
+          As we started development, some of the requirements changed and we had to go back to the design. In one instance, we wanted the recruitment ad to be very prominent as a CTA originally. But after presenting a prototype of that, we were given feedback that it was too "in your face" and it evolved to a pinned news item instead.
         </p>
+      </div>
+      <div class="block60 marginBot-2">
         <a href="img/ixlab/process-mockups.png" class="image-link"><img src="img/ixlab/process-mockups.png" alt="homepage mockups"></a>
+      </div>
+      <div class="block40 marginBot-5">
+        <h4>Insights</h4>
+        <p>Design is never a straight path from mockups to development. We had to go back and modify the design many times even as we were coding the website. Keeping the technical aspects such as how the CSS grid system is structured made new changes more actionable.</p>
       </div>
     </section>
 
@@ -242,24 +245,24 @@
     <section id="dev" class="marginBot-5">
       <div class="sectionBlock blue marginBot-5">
         <h3>DEVELOPMENT</h3>
-        <h1>Crafting the ideal website</h1>
+        <h1>Fullstack dev and deploy</h1>
       </div>
 
       <div class="block40 marginBot-5">
         <h2>Picking the right platform</h2>
         <p>            
-          Before we finalized the finer details of the UI, we wanted to make sure that the platform we chose allowed for the customization we wanted. Based on the client requirements, we knew we needed to build this on a CMS platform so content can be easily managed outside of code. 
+          Before we finalized the details of the UI, we needed to ensure our platform of choice supported the customizations we wanted. Based on client requirements, we knew it had to be built on a CMS platform where content could be easily managed outside of code. 
           <br><br>
-          Various platforms such as Wordpress, Drupal, and Kirby were considered, but ultimately we decided to go with <b>Craft CMS</b>. We were impressed by the demo, and the pricing model fit with what we needed. It lets us build the site exactly how we wanted, and the powerful admin panel allowed for intuitive content management. 
+          Various platforms such as Wordpress, Drupal, and Kirby were considered, but ultimately we decided to go with <b>Craft CMS</b>. We were impressed by the demo, and the pricing model fit with what we needed. It let us build the site exactly how we wanted, and the powerful admin panel allowed for intuitive content management. 
           <br><br>
-          The content for this site was very structured in nature, which lead well to Craft's template system. For example, all publication entries must have a title, authors, citation, abstract, etc. We can build custom field entries that allows anyone to add content by entering data into a template form and the resulting output entry will be rendered accordingly. This made for a much more guided content management experience than Wordpress could provide.
+          Craft offered a much more guided content management experience than Wordpress. The content was very structured and we used that to model Craft's template system. For example, all publication entries must have a title, author(s), citation, abstract, etc. These fields were put together into a template form so anyone can add content just by filling in the data as shown below.
         </p>
         <figure class="marginBot-2">
           <a href="img/ixlab/dev-craftadmin.png" class="image-link"><img src="img/ixlab/dev-craftadmin.png" alt="craft admin panel"></a>
-          <figcaption>Craft allows for customized entry fields which fit the content structure.</figcaption>
+          <figcaption>Craft allows for customized entry fields which we modeled after the structure of the content.</figcaption>
         </figure>
         <p>
-          Lastly, it was also quite easy for 2 designer/developers to learn, meaning that any future maintainers with basic HTML/CSS knowledge can also pick it up quickly.
+          This platform was quite easy for 2 designers to pick up, meaning that anyone else with basic HTML/CSS knowledge can also learn it quickly.
         </p>
       </div>
       
@@ -270,51 +273,57 @@
     <section id="solution" class="marginBot-5">
       <div class="sectionBlock blue marginBot-5">
         <h3>SOLUTION</h3>
-        <h1>The ixlab website</h1>
+        <h1>The ixLab website</h1>
       </div>
 
-      <div class="block60 marginBot-5">
-        <div class="imageDuo marginBot-2">
-          <a href="img/ixlab/solution-home.png" class="image-link imgBorder"><img src="img/ixlab/solution-home.png" alt="homepage"></a>
-          <a href="img/ixlab/solution-people.png" class="image-link imgBorder"><img src="img/ixlab/solution-people.png" alt="people page"></a>
-        </div>
+      <div class="block40 marginBot-5">
+        <p>The final solution is a clean, minimal website that showcases the research of the lab and highlights their achievements. On the backend, the admin panel allows the lab to easily update the website with new content through an intuitive interface. The website can be found here at <a href="https://ixlab.cs.sfu.ca/">https://ixlab.cs.sfu.ca</a>.</p>
       </div>
 
       <div class="block60 marginBot-2">
         <div class="imageDuo marginBot-2">
-          <a href="img/ixlab/solution-courses.png" class="image-link imgBorder"><img src="img/ixlab/solution-courses.png" alt="courses page"></a>
-          <a href="img/ixlab/solution-publications.png" class="image-link imgBorder"><img src="img/ixlab/solution-publications.png" alt="publication page"></a>
+          <a href="img/ixlab/solution-home.png" class="image-link"><img class="imgBorder" src="img/ixlab/solution-home.png" alt="homepage"></a>
+          <a href="img/ixlab/solution-people.png" class="image-link"><img class="imgBorder" src="img/ixlab/solution-people.png" alt="people page"></a>
+        </div>
+
+        <div class="imageDuo marginBot-2">
+          <a href="img/ixlab/solution-courses.png" class="image-link"><img class="imgBorder" src="img/ixlab/solution-courses.png" alt="courses page"></a>
+          <a href="img/ixlab/solution-publications.png" class="image-link"><img class="imgBorder" src="img/ixlab/solution-publications.png" alt="publication page"></a>
         </div>
       </div>
       
-      <div class="block40 marginBot-5">
-        <p>The website can be found here at <a href="https://ixlab.cs.sfu.ca">https://ixlab.cs.sfu.ca</a>.</p>
-      </div>
     </section>
 
 
     <!-- outcomes section -->
-    <section id="outcomes" class="marginBot-5">
+    <section id="retrospect" class="marginBot-5">
       <div class="sectionBlock blue marginBot-5">
-        <h3>OUTCOMES</h3>
-        <h1>Important lessons learnt</h1>
+        <h3>In Retrospect</h3>
+        <h1>Key Takeaways and Reflections</h1>
       </div>
 
       <div class="block40">
-        <h2>Working with clients</h2>
+        <h2>Making decisions with (or without) clients</h2>
         <p>
-          One of the most important soft skills I learned in this project was **effective decision making** when working with clients. While they had a strong say in the direction of the design, there were often times where I had to make an executive decision because the feedback loop would be too slow otherwise. The important thing to keep in mind is to be flexible and patient, as designs may need to be updated as clients change their mind or project requirements change.
+          An important soft skill I practiced was <b>effective decision making</b> while working with clients. While they had a strong say in the direction of the design, there were often times where I had to make notable decisions on my own. Waiting on feedback for every decision is not an ideal workflow, especially with busy clients. As long as we stay flexible and patient, designs can be updated as clients change their mind or project requirements update.
           <br><br>
-          Another important realization was that <b>the client is not the user</b>. While the client has their own desires, they are ultimately not the people who will be viewing the website. It is our job as the designer to transform the business needs of the client into a good experience for the people visiting the site.
+          Another important realization was that <b>the client is not the user</b>. While the client has their own desires, they are ultimately not the people who will be viewing the website. It is our job as the designer to balance the client's business needs and desires with a delightful experience for the people viewing the site.
         </p>
 
-        <h2>Learning as I go</h2>
+        <h2>Empathy in communication</h2>
         <p>
-          While I had some experience in web development before, I picked up a plethora of new development skills while working on this project. From proper Git workflows to setting up test servers, I tried to follow *proper* web dev practices even though it would have been easy to slap things together. It was my first time deploying a website to a server, so I also had to learn about Apache, SQL, and PHP configuration. 
+          A certain situation taught me how important it is to <b>apply empathy and understanding when communicating in the workplace</b>. 
           <br><br>
-          One of the biggest challenges was that we had to request IT to deploy the server for us. In the midst of the COVID situation, they had their hands tied with more urgent tasks and our request was left on silence for weeks. 
+          It was in the midst of the COVID pandemic and we had to request IT to remotely deploy the server for us. Unfortunately, they had their hands tied with more urgent tasks and our request was left on silence for weeks. Our ticket was not a priority for them, and we were stuck at a standstill. 
           <br><br>
-          Our ticket was not a priority for them, and it would have been easy to send angry emails for being ignored. However, I knew we were in difficult times and by using empathy to understanding the situation from their perspective, I was able to send successful emails that described our situation with patience yet persistence. These soft skills in communication are essential to working effectively with people in various departments.
+          However, I knew the difficult position they were in and used empathy to understand their perspective. By sending emails that described our situation with patience yet persistence, we were eventually able to get what we needed. A key step to effective workplace communication is respecting that others may have different priorities than us and learning to work around it.
+        </p>
+
+        <h2>I actually like coding again</h2>
+        <p>
+          While I had some prior web development experience, I had to pick up a plethora of new technical skills throughout this project. From Git workflows to understanding web stacks, I tried to follow *proper* web dev practices even though it would have been easy to just slap things together. Although it was quite challenging at times, the best way to learn is through a real project and <b>I rediscovered my passion for development</b> thanks to this. 
+          <br><br>
+          While my current focus is in design, having these programming skills in my back pocket will let me bring extra value to any team I join. The world of web dev is constantly changing and I'll need to stay up to date to make sure they are relevant for whatever projects come my way next.
         </p>
       </div>
     </section>
